@@ -1,0 +1,389 @@
+body {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, ul {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 36px;
+    font-style: inherit;
+    filter:drop-shadow(4px 5px 5px #444444);
+    font-weight: bolder;
+    letter-spacing: -1px;
+    color: #fafafa;
+}
+
+h2 {
+    font-size: 40px;
+    font-style: inherit;
+    text-align: center;
+    font-weight: calc(750);
+    letter-spacing: 0px;
+    color: #000000;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+h4 {
+    text-align: center;
+    color: #3E04E4;
+}
+
+li, ul, a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.box-60 {
+    margin: 0% 25% 0% 25%;
+}
+.box-80 {
+    margin: 0% 15% 0% 15%;
+}
+
+.margin-top-5 {
+    margin-top: 5%;
+}
+.margin-top-1_5em {
+    margin-top: 1.5em;
+}
+.margin-bottom-10 {
+    margin-bottom: 10%;
+}
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+.margin-bottom-4 {
+    margin-bottom: 4%;
+}
+.margin-bottom-1_5em {
+    margin-bottom: 1.5em;
+}
+.margin-3em {
+    margin: 3em;
+}
+.margin-3em_tel_margin-1_5em {
+    margin: 3em;
+}
+.margin-0_5em {
+    margin: 0.5em;
+}
+.margin-left-3em {
+    margin-left: 3em;
+}
+.margin-left-3em-tel {
+    margin-left: 3em;
+}
+.margin-left-0_5em {
+    margin-left: 0.5em;
+}
+.margin-right-7em {
+    margin-right: 7em;
+}
+.margin-right-3em {
+    margin-right: 3em;
+}
+.margin-right-0_5em {
+    margin-right: 0.5em;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10%;
+}
+.padding-bottom-4 {
+    padding-bottom: 4%;
+}
+.padding-bottom-2 {
+    padding-bottom: 2%;
+}
+.padding-bottom-3 {
+    padding-bottom: 3%;
+}
+.padding-both-2em {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.padding-both-1em {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.text-align-left {
+    text-align: left;
+}
+.text-align-right {
+    text-align: right;
+}
+.text-align-center {
+    text-align: center;
+}
+.text-align-both {
+    text-align: justify;
+}
+.text-white {
+    color: #f6f6f6;
+}
+
+.highlight-hover:hover {
+    filter: drop-shadow(4px 5px 5px #cacbcc);
+}
+
+.strong-green {
+    color: #18AA00;
+    font-weight: calc(750);
+}
+.strong-blue {
+    color: #3E04E4;
+    font-weight: calc(750);
+}
+.strong-dark {
+    font-weight: calc(750);
+}
+.strong-dark-2 {
+    font-weight: bold;
+}
+
+button.green {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    background-color: #18AA00;
+    padding: 8px 8px 8px 8px;
+    border-radius: 8px;
+    color: #F6F6F6;
+    border: none;
+}
+button.blue {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    background-color: #3E04E4;
+    padding: 8px 8px 8px 8px;
+    border-radius: 8px;
+    color: #F6F6F6;
+    border: none;
+}
+
+.section-white {
+    background-color: #FEFEFE;
+    display: block;
+}
+.section-grey {
+    background-color: #F6F6F6;
+    display: block;
+}
+
+.hidden-div {
+    position: relative;
+    visibility: hidden;
+}
+
+.overlay-svg {
+    position: absolute;
+    visibility: visible;
+    z-index: 2; /* Assurez-vous que les SVGs sont au-dessus de tout */
+}
+
+.vertical-align-div {
+    align-items: center; /* Centre verticalement les éléments dans le conteneur */
+    justify-content: space-between; /* Optionnel : espace entre les deux divs */
+}
+
+.vertical-align-div-2 {
+    align-items: center; /* Centre verticalement les éléments dans le conteneur */
+}
+
+.degrade-green-to-blue {
+    background: linear-gradient(to right, #18AA00, #3E04E4);
+    background-clip: text;
+    color: transparent;
+}
+.work-sans-900 {
+    font-weight: calc(900);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.fs22 {
+    font-size: 22px;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+.height-max {
+    height: auto;
+}
+
+.smart {
+    display: none;
+}
+.pc {
+    display: initial;
+}
+.hidden-div-tel {
+    display: flex;
+}
+.show-div-tel {
+    display: none;
+}
+.row-inv {
+    flex-direction: row;
+}
+.column-inv {
+    flex-direction: row;
+}
+
+.div-right-div-center {
+    justify-content: flex-end;
+}
+
+@media (max-width: 1400px) {
+    body {
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a, li, ul {
+        font-family: "Trebuchet MS", sans-serif;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-style: inherit;
+        filter: drop-shadow(4px 5px 5px #444444);
+        font-weight: bolder;
+        letter-spacing: -1px;
+        color: #fafafa;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-style: inherit;
+        text-align: center;
+        font-weight: calc(750);
+        letter-spacing: 0px;
+        color: #000000;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        text-align: center;
+        color: #3E04E4;
+        font-size: 14px;
+    }
+
+    li, ul, a {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    p {
+        font-size: 12px;
+        color: #000000;
+    }
+
+    .fs22 {
+    font-size: 15px;
+    }
+
+    svg{
+        width: 70%;
+        height: auto;
+    }
+
+    .smart {
+        display: initial;
+    }
+    .pc {
+        display: none;
+    }
+
+    .li.list {
+        width: 70%;
+        height: auto;
+    }
+
+    button.green {
+        font-family: Poppins, sans-serif;
+        font-size: 12px;
+        background-color: #18AA00;
+        padding: 4px 4px 4px 4px;
+        border-radius: 4px;
+        color: #F6F6F6;
+        border: none;
+    }
+    button.blue {
+        font-family: Poppins, sans-serif;
+        font-size: 12px;
+        background-color: #3E04E4;
+        padding: 4px 4px 4px 4px;
+        border-radius: 4px;
+        color: #F6F6F6;
+        border: none;
+    }
+
+    .Opx {
+        height: 0px;
+    }
+
+    .row-inv {
+        flex-direction: column;
+    }
+    .column-inv {
+    flex-direction: row;
+    }
+    .hidden-div-tel {
+    display: none;
+    }
+    .show-div-tel {
+        display: flex;
+    }
+
+    .div-right-div-center {
+    justify-content: center;
+    }
+
+    .w50p {
+        width: 50%;
+        height: auto;
+    }
+    .w80p {
+        width: 80%;
+        height: auto;
+    }
+    .margin-left-3em-tel {
+    margin-left: 0.5em;
+    }
+    .margin-3em_tel_margin-1_5em {
+        margin: 1.5em;
+    }
+}

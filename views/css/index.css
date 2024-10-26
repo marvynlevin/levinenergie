@@ -1,0 +1,27 @@
+.logos-pos {
+    position: relative;
+    top: -225px;
+}
+
+.text-pos {
+    position: relative;
+    text-align: center;
+    width: 100vw !important;
+}
+
+.controls-pos {
+    position: relative;
+    top: -440px;
+}
+
+.green-flame {
+    top: 0px; /* Ajustez la position verticale si nécessaire */
+    right: 0; /* Le coller au bord droit de l'écran */
+    left: auto; /* Annule toute règle left potentielle */
+}
+
+.blue-flame {
+    top: 550px; /* Ajustez la position verticale si nécessaire */
+    right: auto; /* Le coller au bord droit de l'écran */
+    left: 0; /* Annule toute règle left potentielle */
+}

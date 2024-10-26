@@ -1,0 +1,87 @@
+.list {
+    height: 200px;
+    transform: translate(-50%,-50%);
+}
+
+.list li {
+  list-style-type: none;
+
+    width: 600px;
+    height: 300px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: -100%;
+    border-radius: 2px;
+    background: linear-gradient(to right, #18AA00, #3E04E4);
+    transition: transform 1s, opacity 1s;
+}
+
+.list .act {
+    opacity: 1;
+    padding: 45px;
+    z-index: 999;
+}
+
+.list .prev,
+.list .next {
+    cursor: pointer;
+}
+
+.list .prev {
+    transform: translateX(-575px) scale(.85);
+    padding: 45px;
+}
+
+.list .next {
+    transform: translateX(575px) scale(.85);
+    padding: 45px;
+}
+
+.list .hide {
+    transform: translateX(-800px) scale(.85);
+    opacity: 0;
+}
+
+.list .new-next {
+    transform: translateX(800px) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    background-color: green;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.list .off-left {
+  transform: translateX(-2000px) scale(.85); /* Hors du champ à gauche */
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+.list .off-right {
+  transform: translateX(2000px) scale(.85); /* Hors du champ à droite */
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+.comments {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* S'assure que l'élément prend toute la largeur de son conteneur */
+    position: relative;
+    right: 52%;
+    left: 52%;
+}
