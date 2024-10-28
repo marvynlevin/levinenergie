@@ -103,7 +103,7 @@ class Carousel {
         let cardHtml =
             `<div class="card" id="${cardId}" style="display: ${visible ? "inherit" : "none"}">
     <img alt="image" src="${data.img}"> 
-    ${typeof data.desc == "string" && data.desc.length > 0 ? `<h1 class="text-pos" style="max-width: 58%; margin-left: 10%; margin-right: 10%">${data.desc}</h1></div>` : ''}
+    ${typeof data.desc == "string" && data.desc.length > 0 ? `<h1 class="text-pos tel-45px" style="max-width: 58%; margin-left: 10%; margin-right: 10%">${data.desc}</h1></div>` : ''}
 </div>`;
 
 
@@ -117,24 +117,20 @@ class Carousel {
 const carousel = new Carousel(
     [
         {
-            img: "/etslevinenergie/views/static/img/1.png",
-            desc: "Votre pompe à chaleur sur mesure"
+            img: "/static/img/illustrationImage2.png",
+            desc: "Votre chauffagiste sur Etupes"
         },
         {
-            img: "https://images.unsplash.com/photo-1676300183945-0815a081b11b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            desc: "tapas?"
+            img: "/static/img/illustrationImage2.png",
+            desc: "Votre chauffagiste sur Etupes"
         },
         {
-            img: "https://images.unsplash.com/photo-1676300183945-0815a081b11b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            desc: "diabètes :o"
+            img: "/static/img/illustrationImage2.png",
+            desc: "Votre chauffagiste sur Etupes"
         },
         {
-            img: "https://images.unsplash.com/photo-1473093226795-af9932fe5856?q=80&w=1994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            desc: "sans la salade svp"
-        },
-        {
-            img: "https://images.unsplash.com/photo-1521909944782-4aee70b674ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            desc: "C'est quoi ca? En tout cas c'est appétissant"
+            img: "/static/img/illustrationImage2.png",
+            desc: "Votre chauffagiste sur Etupes"
         }
     ],
     "plats_carousel"

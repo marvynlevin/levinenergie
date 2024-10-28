@@ -27,6 +27,7 @@ nav {
     margin: auto;
     padding: 0.5em;
 }
+
 .img-resize-footer {
     max-width: 400px;
     padding: 0em 0.2em 0.2em 0.2em;
@@ -111,12 +112,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 150px;
     width: 100%;
-    }
-
-    .svg-left, .svg-right {
-        display: flex;
     }
 
     .svg-right {
