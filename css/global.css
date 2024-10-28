@@ -59,6 +59,9 @@ p {
 .box-80 {
     margin: 0% 15% 0% 15%;
 }
+.box-60-to-80-tel {
+    margin: 0% 25% 0% 25%;
+}
 
 .margin-top-5 {
     margin-top: 5%;
@@ -113,6 +116,9 @@ p {
 }
 .mr-auto {
     margin-right: auto;
+}
+.margin-left-1_5em_pc {
+    margin-left: 1.5em;
 }
 
 .padding-bottom-10 {
@@ -242,6 +248,9 @@ button.blue {
 .fs30 {
     font-size: 30px;
 }
+.fs25-35-tel {
+    font-size: 22px;
+}
 
 .w-100p {
     width: 100%;
@@ -277,7 +286,7 @@ button.blue {
     justify-content: flex-end;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
     body {
         font-style: normal;
         font-weight: normal;
@@ -408,6 +417,9 @@ button.blue {
     .tel-15px {
     font-size: 10px;
     }
+    .fs25-35-tel {
+        font-size: 40px;
+    }
 
     .box-60 {
     margin: 0% 25% 0% 25%;
@@ -415,7 +427,13 @@ button.blue {
     .box-80 {
         margin: 0% 15% 0% 15%;
     }
+    .box-60-to-80-tel {
+        margin: 0% 15% 0% 15%;
+    }
     .tel-45px {
         font-size: 50px;
+    }
+    .margin-left-1_5em_pc {
+    margin-left:0em;
     }
 }
