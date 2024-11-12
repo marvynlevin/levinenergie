@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #F6F6F6;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li, ul {
@@ -17,12 +18,20 @@ a {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.h1-bold {
+    font-size: 40px;
     font-style: inherit;
-    filter:drop-shadow(4px 5px 5px #444444);
-    font-weight: bolder;
-    letter-spacing: -1px;
-    color: #fafafa;
+    text-align: center;
+    font-weight: calc(750);
+    letter-spacing: 0px;
+    color: #000000;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 h2 {
@@ -99,6 +108,9 @@ p {
 .margin-left-0_5em {
     margin-left: 0.5em;
 }
+.margin-left-0_3em {
+    margin-left: 0.3em;
+}
 .margin-right-7em {
     margin-right: 7em;
 }
@@ -140,6 +152,10 @@ p {
 .padding-both-1em {
     padding-left: 1em;
     padding-right: 1em;
+}
+.padding-both-0em_1em-tel {
+    padding-left: 0em;
+    padding-right: 0em;
 }
 
 .text-align-left {
@@ -251,6 +267,9 @@ button.blue {
 .fs25-35-tel {
     font-size: 22px;
 }
+.fs20-30-tel {
+    font-size: 20px;
+}
 
 .w-100p {
     width: 100%;
@@ -286,6 +305,65 @@ button.blue {
     justify-content: flex-end;
 }
 
+
+.hover-shadow {
+    transition: all 0.7s ease;
+}
+.hover-shadow {
+    transition: all 0.7s ease;
+}
+.hover-shadow:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.hover-shadow-blue {
+    transition: all 0.7s ease;
+}
+.hover-shadow-blue:hover {
+    box-shadow: 0px 4px 10px rgba(62, 4, 228, 0.3);
+    text-shadow: 2px 2px 5px rgba(62, 4, 228, 0.3);
+}
+.hover-shadow-blue:hover {
+    text-shadow: 2px 2px 5px rgba(62, 4, 228, 0.3);
+}
+.hover-shadow-green {
+    transition: all 0.7s ease;
+}
+.hover-shadow-green:hover {
+    text-shadow: 2px 2px 5px rgba(24, 170, 0, 0.4);
+}
+.hover-shadow-green:hover {
+    text-shadow: 2px 2px 5px rgba(24, 170, 0, 0.4);
+}
+
+
+.svg-shadow {
+    transition: filter 0.5s ease;
+}
+
+.svg-shadow:hover {
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+.zoom-svg {
+    transition: transform 0.3s ease-in-out;
+}
+.zoom-svg:hover {
+    transform: scale(1.05);
+}
+
+.zoom-container {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+.zoom-container:hover {
+    transform: scale(1.05);
+}
+
+.text-align-left_center-tel {
+    text-align: left;
+}
+
 @media (max-width: 1000px) {
     body {
         font-style: normal;
@@ -301,12 +379,9 @@ button.blue {
     }
 
     h1 {
-        font-size: 22px;
-        font-style: inherit;
-        filter: drop-shadow(4px 5px 5px #444444);
-        font-weight: bolder;
-        letter-spacing: -1px;
-        color: #fafafa;
+        font-size: 13px;
+        color: #000000;
+        font-weight: normal;
     }
 
     h2 {
@@ -331,11 +406,11 @@ button.blue {
     }
 
     li, ul, a {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     p {
-        font-size: 12px;
+        font-size: 13px;
         color: #000000;
     }
 
@@ -392,6 +467,10 @@ button.blue {
         display: flex;
     }
 
+    .text-align-left_center-tel {
+        text-align: center;
+    }
+
     .div-right-div-center {
     justify-content: center;
     }
@@ -414,11 +493,18 @@ button.blue {
     .margin-3em_tel_margin-1_5em {
         margin: 1.5em;
     }
+    .padding-both-0em_1em-tel {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
     .tel-15px {
-    font-size: 10px;
+    font-size: 11px;
     }
     .fs25-35-tel {
         font-size: 40px;
+    }
+    .fs20-30-tel {
+        font-size: 30px;
     }
 
     .box-60 {
@@ -430,10 +516,15 @@ button.blue {
     .box-60-to-80-tel {
         margin: 0% 15% 0% 15%;
     }
-    .tel-45px {
-        font-size: 50px;
-    }
     .margin-left-1_5em_pc {
     margin-left:0em;
+    }
+
+    .fs-57 {
+        font-size: 57px;
+    }
+
+    .fs-34 {
+        font-size: 34px;
     }
 }

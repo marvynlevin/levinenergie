@@ -66,6 +66,17 @@
     animation: flash-animation 0.5s forwards;
 }
 
+.text-carrousel {
+    font-size: 36px;
+    font-style: inherit;
+    filter:drop-shadow(4px 5px 5px #444444);
+    font-weight: bolder;
+    letter-spacing: -1px;
+    color: #fafafa;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 @keyframes flash-animation {
     0% {
         opacity: 1;
@@ -75,5 +86,11 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .text-carrousel {
+        font-size: 50px;
     }
 }

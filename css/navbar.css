@@ -106,7 +106,68 @@ nav {
     transition: transform 0.5s ease; /* Animation fluide de la rotation */
 }
 
-/* MEDIA QUERIES : Styles spécifiques aux téléphones (écrans ≤ 768px) */
+.navbar-list a {
+    color: inherit;
+    transition: color 1s ease;
+}
+.navbar-list a:hover {
+    color: #18AA00;
+}
+
+.green {
+    color: #18AA00 !important; /* Vert pour l'élément actif */
+}
+.blue {
+    color: #3E04E4; !important
+    pointer-events: none; /* Désactive le lien pour indiquer que l'utilisateur est déjà sur cette page */
+}
+
+.svg-green {
+    fill: #18AA00; /* Applique la couleur verte au remplissage */
+    stroke: #18AA00; /* Applique la couleur verte au contour */
+}
+
+
+.product-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: color 1s ease;
+}
+.product-link:hover {
+    color: #18AA00;
+}
+.product-link:hover svg path {
+    fill: #18AA00;
+    stroke: #18AA00;
+    transition: fill 1s ease, stroke 1s ease;
+}
+.product-link.green {
+    color: #18AA00 !important;
+}
+.product-link.green svg path {
+    fill: #18AA00;
+    stroke: #18AA00;
+    pointer-events: none;
+}
+.product-link.green:hover {
+    color: #18AA00;
+}
+.product-link.green:hover svg path {
+    fill: #18AA00;
+    stroke: #18AA00;
+}
+.product-link svg path {
+    fill: black;
+    stroke: black;
+    transition: fill 1s ease, stroke 1s ease;
+}
+.product-link {
+    transition: color 1s ease;
+}
+
+
 @media (max-width: 1400px) {
     .svg-container {
     display: flex;

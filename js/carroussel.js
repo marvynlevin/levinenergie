@@ -103,7 +103,7 @@ class Carousel {
         let cardHtml =
             `<div class="card" id="${cardId}" style="display: ${visible ? "inherit" : "none"}">
     <img alt="image" src="${data.img}"> 
-    ${typeof data.desc == "string" && data.desc.length > 0 ? `<h1 class="text-pos tel-45px" style="max-width: 58%; margin-left: 10%; margin-right: 10%">${data.desc}</h1></div>` : ''}
+    ${typeof data.desc == "string" && data.desc.length > 0 ? `<h2 class="text-carrousel text-pos" style="max-width: 58%; margin-left: 10%; margin-right: 10%">${data.desc}</h2></div>` : ''}
 </div>`;
 
 

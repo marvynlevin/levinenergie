@@ -1,37 +1,47 @@
-/* ---------------------------- */
-/* Défilement de droite à gauche */
-.marquee-rtl {
-  overflow: hidden; /* important */
-}
-.marquee-rtl > div {
-  display: inline-block; /* important */
-  white-space: nowrap; /* important */
-  animation: defilement-rtl 150s infinite linear; /* défilement */
-  cursor: pointer;
+/* Conteneur centré pour le contenu */
+.box-80 {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.marquee-rtl > div:first-letter {
-  font-weight: 700;
-  color: #F00;
+/* Style du titre */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
+
+/* Conteneur principal du défilement */
+.marquee-rtl {
+    overflow: hidden; /* Cache l'image qui sort du conteneur */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    position: relative;
+    width: 100%;
+}
+
+/* Contenu du défilement (flexible pour ajouter plus d'images) */
+.marquee-content {
+    display: flex; /* Aligne les images horizontalement */
+    align-items: center;
+    animation: defilement-rtl 80s linear infinite; /* Animation infinie */
+}
+
+/* Animation de défilement infini */
 @keyframes defilement-rtl {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-  100% {
-    -webkit-transform: translate(-100%);
-    transform: translate(-100%);
-  }
+    0% {
+        transform: translateX(0); /* Départ de l'animation */
+    }
+    100% {
+        transform: translateX(-50%); /* Fin de l'animation */
+    }
 }
 
-/* ---------------------------- */
-/* déco */
-h2, p { text-align:center; }
-
-.marquee-rtl {
-  margin: 2em auto;
+/* Ajustez la taille des logos selon vos besoins */
+.logos {
+    max-height: 160px; /* Hauteur maximale de l'image */
 }
-.marquee-rtl > div {
-  font-size: 1.5em;
+
+/* Optionnel : Animation fluide lors du hover */
+.marquee-content:hover {
+    animation-play-state: paused; /* Pause l'animation au survol */
 }
