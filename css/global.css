@@ -17,7 +17,6 @@ a {
     text-decoration: none;
 }
 
-
 h1 {
     font-size: 20px;
     color: #000000;
@@ -71,6 +70,10 @@ p {
 }
 .box-60-to-80-tel {
     margin: 0% 25% 0% 25%;
+}
+
+.border-solid-black-top {
+    border-top: 1px solid #0D0D0D;
 }
 
 .margin-top-5 {
