@@ -70,7 +70,7 @@ class Carousel {
         // Retirer la classe après l'animation
         setTimeout(() => {
             currentCard.classList.remove('flash');
-        }, 12000); // Doit correspondre à la durée de l'animation CSS
+        }, 100); // Doit correspondre à la durée de l'animation CSS
     }
 
     /**
@@ -103,7 +103,7 @@ class Carousel {
         let cardHtml =
             `<div class="card" id="${cardId}" style="display: ${visible ? "inherit" : "none"}">
     <img alt="image" src="${data.img}"> 
-    ${typeof data.desc == "string" && data.desc.length > 0 ? `<h2 class="text-carrousel text-pos" style="max-width: 58%; margin-left: 10%; margin-right: 10%">${data.desc}</h2></div>` : ''}
+    ${typeof data.desc == "string" && data.desc.length > 0 ? `<h1 class="text-carrousel text-pos" style="max-width: 58%; margin-left: 10%; margin-right: 10%">${data.desc}</h1></div>` : ''}
 </div>`;
 
 
@@ -118,19 +118,19 @@ const carousel = new Carousel(
     [
         {
             img: "/static/img/illustrationImage2.png",
-            desc: "Votre chauffagiste sur Etupes"
+            desc: "Levin Energie chauffagiste à Etupes"
         },
         {
-            img: "/static/img/illustrationImage2.png",
-            desc: "Votre chauffagiste sur Etupes"
+            img: "/static/img/PAC1.jpg",
+            desc: "Levin Energie chauffagiste à Etupes"
         },
         {
-            img: "/static/img/illustrationImage2.png",
-            desc: "Votre chauffagiste sur Etupes"
+            img: "/static/img/salleDeBains1.jpg",
+            desc: "Levin Energie chauffagiste à Etupes"
         },
         {
-            img: "/static/img/illustrationImage2.png",
-            desc: "Votre chauffagiste sur Etupes"
+            img: "/static/img/salleDeBains2.jpg",
+            desc: "Levin Energie chauffagiste à Etupes"
         }
     ],
     "plats_carousel"

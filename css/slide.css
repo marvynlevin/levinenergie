@@ -4,13 +4,6 @@
     margin: 0 auto;
 }
 
-/* Style du titre */
-h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
 /* Conteneur principal du défilement */
 .marquee-rtl {
     overflow: hidden; /* Cache l'image qui sort du conteneur */

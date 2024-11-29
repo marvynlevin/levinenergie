@@ -1,6 +1,24 @@
 .logos-pos {
     position: relative;
-    top: -225px;
+    top: -292px;
+}
+
+.logos-left-size {
+    height: 260px;
+    width: auto;
+}
+.logos-right-size {
+    height: 260px;
+    width: auto;
+    padding-top: 40px;
+}
+.logos-certif-size {
+    max-height: 267px;
+    width: auto;
+}
+
+.show-certifs-tel {
+    display: none;
 }
 
 .text-pos {
@@ -24,4 +42,16 @@
     top: 550px; /* Ajustez la position verticale si nécessaire */
     right: auto; /* Le coller au bord droit de l'écran */
     left: 0; /* Annule toute règle left potentielle */
+}
+
+@media (max-width: 1400px) {
+    .logos-certif-size {
+        max-height: 267px;
+        width: auto;
+        display: none;
+    }
+
+    .show-certifs-tel {
+        display: flex;
+    }
 }

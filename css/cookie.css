@@ -1,0 +1,85 @@
+.cookie-popup {
+    width: 28%;
+    height: auto;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: #dfdfdf 0px 0px 15px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.cookie-popup.retracted {
+    width: 50px;
+    right: 10px;
+    background-color: #ffffff;
+}
+
+.cookie-popup-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button-cookie {
+    background-color: #18AA00;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.button-cookie-blue {
+    background-color: #3E04E4;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.button-cookie:hover {
+    background-color: #3E04E4;
+}
+
+.cookie-toggle-btn {
+    position: fixed;
+    background-color: #ffffff;
+    bottom: 25px;
+    width: 60px;
+    height: 60px;
+    left: 25px;
+    margin: auto;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 100px;
+    border: #18AA00;
+    box-shadow: #000000 0px 0px 15px;
+}
+
+
+@media (max-width: 1000px) {
+    .cookie-popup {
+         width: 89%;
+         height: auto;
+         position: fixed;
+         bottom: 20px;
+         left: 20px;
+         background-color: rgb(255, 255, 255);
+         box-shadow: #dfdfdf 0px 0px 15px;
+         color: white;
+         text-align: center;
+         border-radius: 5px;
+         z-index: 1000;
+         transition: all 0.4s ease;
+    }
+}

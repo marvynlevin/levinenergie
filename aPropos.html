@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-          content="ETS Levin Energie, chauffagiste à Étupes : chauffage, chaudières, pompes à chaleur, RGE, garantie 10 ans, service de qualité. Devis gratuit, 50 km autour d'Étupes.">
+          content="Chauffagiste Levin Energie, entreprise de chauffage à Étupes : chauffage, chaudières, pompes à chaleur, RGE, garantie 10 ans, service de qualité. Devis gratuit, 50 km autour d'Étupes.">
+    <meta name="keywords"
+          content="chauffage, chauffagiste, etupes, levin, energie, RGE, chaudière, pompe à chaleur, chauffe-eau, climatisation, salle de bains, panneaux photovoltaîques, installation, entretien, dépannage">
+    <meta name="robots" content="index, follow">
+    <meta name="og:description"
+          content="L'entreprise Levin Energie Baticoop SARL accompagne les particuliers et les professionnels dans leurs projets d’installation et de rénovation de chauffage. Face aux nouvelles contraintes énergétiques, nous nous efforçons, grâce à notre expérience et à nos formations régulières, de proposer des équipements toujours plus performants et économes.">
+    <meta name="og:title" content="Ets LEVIN ENERGIE">
+    <meta property="og:image" content="/static/logo.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
 
-    <title>Ets Levin Energie - Etupes</title>
+    <title>Ets Levin Energie - Chauffagiste sur Etupes</title>
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -13,22 +22,23 @@
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/avis.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cookie.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     <script type="text/javascript" src="js/carroussel.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
 
     <link rel="icon" href="static/img/logo.png">
 </head>
-
 <body>
 
 <!-- Barre de navigation -->
 <nav class="flex-navbar navbar-effect div-center">
-    <div class="row pc"> <!-- style="display: none"-->
+    <div class="row pc w-100p">
         <div class="flex">
-            <div class="row">
+            <div class="row svg-left">
                 <a href="index.html" title="Accueil ETS LEVIN ENERGIE" aria-label="Accueil ETS LEVIN ENERGIE">
                     <svg class="img-resize" width="375" height="76" viewBox="0 0 375 76" fill="none"
                          xmlns="http://www.w3.org/2000/svg"
@@ -196,14 +206,12 @@
                     </svg>
                 </a>
             </div>
-            <div class="item one column"></div>
-            <div class="column height-max">
+            <div class="column height-max" style="margin-left: auto; margin-right: auto">
                 <ul class="navbar-list height-max" style="padding-top: 7px">
                     <li class="row"><a href="index.html" class="text-none margin-left-1_5em fs22">Accueil</a></li>
-                    <li class="row"><a href="aPropos.html" class="text-none margin-left-1_5em fs22 green">A propos</a>
-                    </li>
+                    <li class="row"><a href="aPropos.html" class="text-none margin-left-1_5em fs22 green">A propos</a></li>
                     <li class="row product-item height-max" data-target="product-info-1">
-                        <a href="index.html#produits" class="product-link text-none margin-left-1_5em fs22">
+                        <a href="#produits" class="product-link text-none margin-left-1_5em fs22">
                             Produits
                             <svg class="margin-left-0_3em" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                  viewBox="0 0 22 22" fill="none">
@@ -213,7 +221,7 @@
                         </a>
                     </li>
                     <li class="row product-item" data-target="product-info-2">
-                        <a href="index.html#services" class="product-link text-none margin-left-1_5em fs22">
+                        <a href="#services" class="product-link text-none margin-left-1_5em fs22">
                             Services
                             <svg class="margin-left-0_3em" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                  viewBox="0 0 22 22" fill="none">
@@ -224,8 +232,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="item one"></div>
-            <div class="flex" style="margin-left: 160px;">
+            <div class="flex svg-right" style="margin-left: 160px;">
                 <a href="contact.html" class="product-link text-none contact" style="font-size: 22px">
                     Contact
                     <svg class="row margin-left-0_3em" xmlns="http://www.w3.org/2000/svg" width="30" height="28"
@@ -245,18 +252,19 @@
         </div>
 
         <div id="product-info-1" style="display: none;" class="flex div-center padding-bottom-3">
-            <!-- style="display: none"-->
             <div class="column div-center padding-both-1em text-align-center">
-                <a class="hover-shadow-blue" href="chaudieres.html"><h4>Chaudières</h4></a>
-                <a class="hover-shadow" href="chaudieres.html"><p>Chaudière à condensation</p></a>
-                <a class="hover-shadow" href="chaudieres.html"><p>Chaudière à bois</p></a>
-                <a class="hover-shadow" href="chaudieres.html"><p>Chaudière solaire</p></a>
+                <a class="hover-shadow-blue" href="chaudieres.html"><h4>Chaudières - Poêles</h4></a>
+                <a class="hover-shadow" href="chaudieres.html"><p>Chaudière gaz-fioul</p></a>
+                <a class="hover-shadow" href="chaudieres.html"><p>Chaudière bois-granulés</p></a>
+                <a class="hover-shadow" href="chaudieres.html"><p>Système Solaire Combiné</p></a>
+                <a class="hover-shadow" href="chaudieres.html"><p>Poêle bois-granulés</p></a>
             </div>
             <div class="column div-center padding-both-1em text-align-center">
                 <a class="hover-shadow-blue" href="PAC.html"><h4>Pompes à chaleurs - Climatisation</h4></a>
-                <a class="hover-shadow" href="PAC.html"><p>Pompe à chaleur air-eau</p></a>
-                <a class="hover-shadow" href="PAC.html"><p>Pompe à chaleur air-air</p></a>
-                <a class="hover-shadow" href="PAC.html"><p>Pompe à chaleur géotermique</p></a>
+                <a class="hover-shadow" href="PAC.html"><p>Aérothermie air-eau</p></a>
+                <a class="hover-shadow" href="PAC.html"><p>Aérothermie air-air</p></a>
+                <a class="hover-shadow" href="PAC.html"><p>Géothermie eau-eau</p></a>
+                <a class="hover-shadow" href="PAC.html"><p>Panneaux photovoltaïques</p></a>
             </div>
             <div class="column div-center padding-both-1em text-align-center">
                 <a class="hover-shadow-blue" href="chauffeEau.html"><h4>Chauffe-eau</h4></a>
@@ -265,20 +273,19 @@
                 <a class="hover-shadow" href="chauffeEau.html"><p>Chauffe-eau électrique</p></a>
             </div>
             <div class="column div-center padding-both-1em text-align-center">
-                <a class="hover-shadow-blue" href="autres.html"><h4>Autres</h4></a>
-                <a class="hover-shadow" href="autres.html"><p>Plomberie-sanitire</p></a>
-                <a class="hover-shadow" href="autres.html"><p>Salle de bains</p></a>
-                <a class="hover-shadow" href="autres.html"><p>Panneaux photovoltaîques</p></a>
+                <a class="hover-shadow-blue" href="plomberieSanitaire.html"><h4>Plomberie - Sanitaire</h4></a>
+                <a class="hover-shadow" href="plomberieSanitaire.html"><p>Salle de bains</p></a>
+                <a class="hover-shadow" href="plomberieSanitaire.html"><p>Désembouage circuit hydraulique</p></a>
+                <a class="hover-shadow" href="plomberieSanitaire.html"><p>Chauffage central</p></a>
             </div>
         </div>
 
         <div id="product-info-2" class="flex div-center padding-bottom-3" style="display: none">
-            <!-- style="display: none"-->
             <div class="column padding-both-2em text-align-center">
                 <a class="hover-shadow-blue" href="services.html"><h4>Services</h4></a>
-                <a class="hover-shadow" href="services.html"><p>Dépannages</p></a>
                 <a class="hover-shadow" href="services.html"><p>Entretiens</p></a>
-                <a class="hover-shadow" href="services.html"><p>Service après vente</p></a>
+                <a class="hover-shadow" href="services.html"><p>Dépannages</p></a>
+                <a class="hover-shadow" href="services.html"><p>Installations</p></a>
             </div>
             <div class="column padding-both-2em text-align-center">
                 <a class="hover-shadow-blue" href=""><h4>Tarifs</h4></a>
@@ -293,11 +300,11 @@
         </div>
     </div>
 
-    <div class="row w-100p smart"> <!-- style="display: none" -->
+    <div class="row w-100p smart height-full">
         <div class="flex svg-container">
             <div class="row flex svg-left">
                 <a href="index.html">
-                    <svg class="w-120p" width="425" height="89" viewBox="0 0 425 89" fill="none"
+                    <svg class="" width="425" height="89" viewBox="0 0 425 89" fill="none"
                          xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g clip-path="url(#clip0_454_485)">
@@ -473,17 +480,17 @@
             </div>
         </div>
 
-        <div id="menu-container" class="row disp" style="display: none">
-            <ul class="column navbar-list">
+        <div id="menu-container" class="row" style="display: none">
+            <ul class="column navbar-list" style="padding: 0px">
                 <li class="text-align-center padding-bottom-2"><a href="index.html"
-                                                                  class="text-none margin-1_5em fs30">Accueil</a></li>
+                                                                  class="text-none margin-1_5em">Accueil</a></li>
                 <li class="text-align-center padding-bottom-2"><a href="aPropos.html"
-                                                                  class="text-none margin-1_5em fs30 green">A
+                                                                  class="text-none margin-1_5em green">A
                     propos</a></li>
 
 
                 <li class="row text-align-center product-item-click height-max padding-bottom-2"
-                    data-target-click="info5"><a class="text-none fs30">Produits</a>
+                    data-target-click="info5"><a class="text-none">Produits</a>
                     <!--                    <svg class="margin-right-1_5em" style="width: 7px; height: auto;" xmlns="http://www.w3.org/2000/svg"-->
                     <!--                         width="18" height="18" viewBox="0 0 22 22" fill="none">-->
                     <!--                        <path d="M19.1144 14.6965L11.2434 6.82544C11.1099 6.69198 10.8943 6.69198 10.7608 6.82544L2.88636 14.6965C2.75632 14.8334 2.75972 15.049 2.89319 15.179C3.02666 15.3057 3.23542 15.3057 3.36889 15.179L11.0004 7.55097L18.6285 15.179C18.7654 15.3091 18.981 15.3057 19.111 15.1722C19.241 15.0387 19.241 14.83 19.1144 14.6965Z"-->
@@ -492,38 +499,56 @@
                 </li>
                 <!--                margin-left-1_5em-->
                 <div id="info5" class="flex div-center column product-info-click padding-bottom-3 submenu"
-                     style="display: none"><!-- style="display: none"-->
+                     style="display: none">
                     <div class="row div-center padding-both-1em text-align-center">
-                        <a class="hover-shadow-blue" href="chaudieres.html"><h4 class="fs30">Chaudières</h4></a>
-                        <a class="hover-shadow" href="chaudieres.html"><p class="fs30">Chaudière à condensation</p></a>
-                        <a class="hover-shadow" href="chaudieres.html"><p class="fs30">Chaudière à bois</p></a>
-                        <a class="hover-shadow" href="chaudieres.html"><p class="fs30">Chaudière solaire</p></a>
-                    </div>
-                    <div class="row div-center padding-both-1em text-align-center">
-                        <a class="hover-shadow-blue" href="PAC.html"><h4 class="fs30">Pompes à chaleurs -
-                            Climatisation</h4></a>
-                        <a class="hover-shadow" href="PAC.html"><p class="fs30">Pompe à chaleur air-eau</p></a>
-                        <a class="hover-shadow" href="PAC.html"><p class="fs30">Pompe à chaleur air-air</p></a>
-                        <a class="hover-shadow" href="PAC.html"><p class="fs30">Pompe à chaleur géotermique</p></a>
-                    </div>
-                    <div class="row div-center padding-both-1em text-align-center">
-                        <a class="hover-shadow-blue" href="chauffeEau.html"><h4 class="fs30">Chauffe-eau</h4></a>
-                        <a class="hover-shadow" href="chauffeEau.html"><p class="fs30">Chauffe-eau solaire</p></a>
-                        <a class="hover-shadow" href="chauffeEau.html"><p class="fs30">Chauffe-eau thermodynamique</p>
+                        <a class="hover-shadow-blue" href="chaudieres.html"><h4 class="margin-top-none">Chaudières -
+                            Poêles</h4>
                         </a>
-                        <a class="hover-shadow" href="chauffeEau.html"><p class="fs30">Chauffe-eau électrique</p></a>
+                        <a class="hover-shadow" href="chaudieres.html"><h5 class="margin-top-none">Chaudière
+                            gaz-fioul</h5></a>
+                        <a class="hover-shadow" href="chaudieres.html"><h5 class="margin-top-none">Chaudière
+                            bois-granulés</h5></a>
+                        <a class="hover-shadow" href="chaudieres.html"><h5 class="margin-top-none">Système Solaire
+                            Combiné</h5>
+                        </a>
+                        <a class="hover-shadow" href="chaudieres.html"><h5 class="margin-top-none">Poêle
+                            bois-granulés</h5>
+                        </a>
                     </div>
                     <div class="row div-center padding-both-1em text-align-center">
-                        <a class="hover-shadow-blue" href="autres.html"><h4 class="fs30">Autres</h4></a>
-                        <a class="hover-shadow" href="autres.html"><p class="fs30">Plomberie-sanitaire</p></a>
-                        <a class="hover-shadow" href="autres.html"><p class="fs30">Salle de bains</p></a>
-                        <a class="hover-shadow" href="autres.html"><p class="fs30">Panneaux photovoltaîques</p></a>
+                        <a class="hover-shadow-blue" href="PAC.html"><h4 class="margin-top-none">Pompes à chaleurs -
+                            Climatisation</h4></a>
+                        <a class="hover-shadow" href="PAC.html"><h5 class="margin-top-none">Aérothermie air-eau</h5></a>
+                        <a class="hover-shadow" href="PAC.html"><h5 class="margin-top-none">Aérothermie air-air</h5></a>
+                        <a class="hover-shadow" href="PAC.html"><h5 class="margin-top-none">Géothermie eau-eau</h5></a>
+                        <a class="hover-shadow" href="PAC.html"><h5 class="margin-top-none">Panneaux
+                            photovoltaïques</h5></a>
+                    </div>
+                    <div class="row div-center padding-both-1em text-align-center">
+                        <a class="hover-shadow-blue" href="chauffeEau.html"><h4 class="margin-top-none">Chauffe-eau</h4>
+                        </a>
+                        <a class="hover-shadow" href="chauffeEau.html"><h5 class="margin-top-none">Chauffe-eau
+                            solaire</h5></a>
+                        <a class="hover-shadow" href="chauffeEau.html"><h5 class="margin-top-none">Chauffe-eau
+                            thermodynamique</h5>
+                        </a>
+                        <a class="hover-shadow" href="chauffeEau.html"><h5 class="margin-top-none">Chauffe-eau
+                            électrique</h5></a>
+                    </div>
+                    <div class="row div-center padding-both-1em text-align-center">
+                        <a class="hover-shadow-blue" href="plomberieSanitaire.html"><h4 class="margin-top-none">Plomberie -
+                            Sanitaire</h4></a>
+                        <a class="hover-shadow" href="plomberieSanitaire.html"><h5 class="margin-top-none">Salle de bains</h5></a>
+                        <a class="hover-shadow" href="plomberieSanitaire.html"><h5 class="margin-top-none">Chauffage central</h5>
+                            <a class="hover-shadow" href="plomberieSanitaire.html"><h5 class="margin-top-none">Désembouage circuit
+                                hydraulique</h5></a>
+                        </a>
                     </div>
                 </div>
 
 
                 <li class="column text-align-center product-item-click padding-bottom-2" data-target-click="info6"><a
-                        class="text-none fs30">Services</a>
+                        class="text-none">Services</a>
                     <!--                    <svg class="margin-right-1_5em" style="width: 7px; height: auto;" xmlns="http://www.w3.org/2000/svg"-->
                     <!--                         width="18" height="18" viewBox="0 0 22 22" fill="none">-->
                     <!--                        <path d="M19.1144 14.6965L11.2434 6.82544C11.1099 6.69198 10.8943 6.69198 10.7608 6.82544L2.88636 14.6965C2.75632 14.8334 2.75972 15.049 2.89319 15.179C3.02666 15.3057 3.23542 15.3057 3.36889 15.179L11.0004 7.55097L18.6285 15.179C18.7654 15.3091 18.981 15.3057 19.111 15.1722C19.241 15.0387 19.241 14.83 19.1144 14.6965Z"-->
@@ -532,28 +557,29 @@
                 </li>
                 <!--                margin-left-1_5em-->
                 <div id="info6" class="flex div-center product-info-click column padding-bottom-3 submenu"
-                     style="display: none"><!-- style="display: none"-->
+                     style="display: none">
                     <div class="row padding-both-2em text-align-center">
-                        <a class="hover-shadow-blue" href="services.html"><h4 class="fs30">Services</h4></a>
-                        <a class="hover-shadow" href="services.html"><p class="fs30">Dépannages</p></a>
-                        <a class="hover-shadow" href="services.html"><p class="fs30">Entretiens</p></a>
-                        <a class="hover-shadow" href="services.html"><p class="fs30">Service après vente</p></a>
+                        <a class="hover-shadow-blue" href="services.html"><h4 class="margin-top-none">Services</h4></a>
+                        <a class="hover-shadow" href="services.html"><h5 class="margin-top-none">Entretiens</h5></a>
+                        <a class="hover-shadow" href="services.html"><h5 class="margin-top-none">Dépannages</h5></a>
+                        <a class="hover-shadow" href="services.html"><h5 class="margin-top-none">Installations</h5></a>
                     </div>
                     <div class="row padding-both-2em text-align-center">
-                        <a class="hover-shadow-blue" href="services.html"><h4 class="fs30">Tarifs</h4></a>
-                        <a class="hover-shadow" href="services.html"><p class="fs30">Fiche des tarifs - pdf</p></a>
+                        <a class="hover-shadow-blue" href="services.html"><h4 class="margin-top-none">Tarifs</h4></a>
+                        <a class="hover-shadow" href="services.html"><h5 class="margin-top-none">Fiche des tarifs -
+                            pdf</h5></a>
                     </div>
                     <div class="row padding-both-2em text-align-center">
-                        <a class="hover-shadow-blue" href="contact.html"><h4 class="fs30">Nous retrouver</h4></a>
-                        <a class="hover-shadow" href="contact.html"><p class="fs30">Facebook</p></a>
-                        <a class="hover-shadow" href="contact.html"><p class="fs30">Instagram</p></a>
-                        <a class="hover-blue" href="contact.html"><p class="fs30">Youtube</p></a>
+                        <a class="hover-shadow-blue" href="contact.html"><h4 class="margin-top-none">Nous retrouver</h4>
+                        </a>
+                        <a class="hover-shadow" href="contact.html"><h5 class="margin-top-none">Facebook</h5></a>
+                        <a class="hover-shadow" href="contact.html"><h5 class="margin-top-none">Instagram</h5></a>
+                        <a class="hover-blue" href="contact.html"><h5 class="margin-top-none">Youtube</h5></a>
                     </div>
                 </div>
 
-
                 <li class="text-align-center padding-bottom-2" style="padding-top: 3.0em; padding-bottom: 1.5em;"><a
-                        class="text-none margin-1_5em fs30" href="contact.html">Contact</a></li>
+                        class="text-none margin-1_5em" href="contact.html">Contact</a></li>
             </ul>
         </div>
 
@@ -594,26 +620,29 @@
         </div>
 
         <!-- Logos -->
-        <div class="flex" style="margin-bottom: -10%">
-            <div class="row logos-pos" style="padding-left: 3%">
-                <img alt="Image illustratrice" class="Opx" src="/static/img/logosLeft.png"></div>
-            <div class="four row">
+        <div class="hidden-div-tel">
+            <div class="flex section-grey w-100p" style="margin-bottom: -15%;">
+                <div class="row logos-pos" style="padding-left: 3%">
+                    <img alt="Image illustratrice" class="logos-left-size" src="/static/img/logosLeft.png"></div>
+                <div class="four row">
+                </div>
+                <div class="row logos-pos pc" style="padding-right: 3%">
+                    <img alt="Image illustratrice" class="logos-right-size" src="/static/img/logosRight.png"></div>
             </div>
-            <div class="row logos-pos" style="padding-right: 3%">
-                <img alt="Image illustratrice" class="Opx" src="/static/img/logosRight.png"></div>
         </div>
     </div>
 </section>
 
+<!--aProposPresentation-->
 <section class="section-grey">
-    <div style="padding-bottom: 20%; margin-bottom: 0px; margin-right: 15%; margin-left: 15%;">
-        <h1 class="h1-bold">La page "A Propos" est actuellement en maintenance. Pour plus
-            d'informations, contactez-nous.</h1>
+    <div style="padding-bottom: 20%; margin-bottom: 0px; margin-right: 10%; margin-left: 10%;">
+        <h2>La page "À Propos" est actuellement en maintenance. Pour plus
+            d'informations, contactez-nous.</h2>
         <div class="flex row-inv div-center margin-top-5">
             <div class="flex vertical-align-div-2">
                 <div class="row mr-auto">
                     <a class="text-none" href="tel:+33686100497">
-                        <svg class="w-120p" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M48.6226 11.9568L44.685 8.10022C43.5987 7.03463 41.8351 7.03463 40.7474 8.10022L34.8409 15.8134C33.9393 17.1182 33.7546 18.6043 34.8409 19.6699L37.2517 22.0309C35.4648 24.3824 33.3195 26.9463 30.9047 29.3113C28.1738 31.9854 25.1364 34.4162 22.4055 36.413L20.0755 34.1327C18.9892 33.0671 17.4718 33.2472 16.1379 34.1327L8.26264 39.9175C6.94234 40.8111 7.17494 42.7085 8.26264 43.7741L12.2003 47.6293C14.3757 49.7605 17.2037 49.0779 20.0755 47.6293C20.0755 47.6293 28.7676 42.851 36.2091 35.5625C43.2087 28.7066 48.6226 19.6699 48.6226 19.6699C49.7514 16.629 50.798 14.0867 48.6226 11.9568Z"
@@ -623,14 +652,14 @@
                 </div>
                 <div class="row mr-auto" style="min-width: 80%">
                     <a class="text-none" href="tel:+33686100497">
-                        <p class="degrade-green-to-blue work-sans-900 text-align-left fs25-35-tel">06 86 10 04 97</p>
+                        <p class="degrade-green-to-blue work-sans-900 text-align-left">06 86 10 04 97</p>
                     </a>
                 </div>
             </div>
             <div class="flex vertical-align-div-2 margin-left-1_5em_pc">
                 <div class="row mr-auto">
                     <a href="mailto:contact@levinenergie.fr">
-                        <svg class="w-120p" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M28.5 32.228L23.4224 27.4172L5.70733 48.1425H50.8425L33.4536 27.3823L28.5 32.228ZM35.9878 25.1825L52.8346 45.2008C52.9311 44.8123 53 44.4098 53 43.9845V9.3835L35.9878 25.1825ZM4 9.30302V43.9845C4 44.4098 4.06891 44.8123 4.16538 45.2008L21.0688 25.2473L4 9.30302ZM51.4688 6.125H5.53125L28.5 27.1583L51.4688 6.125Z"
@@ -640,7 +669,7 @@
                 </div>
                 <div class="row mr-auto" style="min-width: 80%">
                     <a class="text-none" href="mailto:contact@levinenergie.fr">
-                        <p class="degrade-green-to-blue work-sans-900 text-align-left fs25-35-tel">
+                        <p class="degrade-green-to-blue work-sans-900 text-align-left">
                             contact@levinenergie.fr</p>
                     </a>
                 </div>
@@ -650,17 +679,17 @@
 </section>
 
 <!-- Footer -->
-<footer style="border-top: 1px solid #0D0D0D;" class="section-grey">
-    <div class="flex div-center">
+<footer style="border-top: 1px solid #0D0D0D;" class="section-white">
+    <div class="flex div-center margin-top-1_5em-tel">
         <div class="flex row-inv div-center">
-            <div class="row padding-both-2em margin-left-0_5em margin-right-0_5em text-align-left-tel">
-                <h2 class="fs-57 text-align-left_center-tel" style="padding-top: 0px; padding-bottom: 0px;">Nous
+            <div class="row padding-both-2em padding-both-1em-tel margin-left-0_5em margin-right-0_5em text-align-left-tel">
+                <h2 class="text-align-left_center-tel" style="padding-top: 0px; padding-bottom: 0px;">Nous
                     contacter</h2>
                 <div class="flex">
                     <div class="row m-auto">
                         <a class="text-none" href="tel:+33686100497" title="Téléphone ETS LEVIN ENERGIE"
                            aria-label="Téléphone ETS LEVIN ENERGIE">
-                            <svg class="w80p" xmlns="http://www.w3.org/2000/svg" width="75" height="50"
+                            <svg class="w-120p" xmlns="http://www.w3.org/2000/svg" width="75" height="50"
                                  viewBox="0 0 75 50"
                                  fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -672,7 +701,7 @@
                     <div class="row padding-both-2em" style="min-width: 84%">
                         <a class="text-none" href="tel:+33686100497" title="Téléphone ETS LEVIN ENERGIE"
                            aria-label="Téléphone ETS LEVIN ENERGIE">
-                            <p class="fs-34 text-align-left"><span class="strong-dark">06 86 10 04 97</span></p>
+                            <p class=" text-align-left"><span class="strong-dark">06 86 10 04 97</span></p>
                         </a>
                     </div>
                 </div>
@@ -680,7 +709,7 @@
                     <div class="row m-auto">
                         <a href="mailto:contact@levinenergie.fr" title="Mail ETS LEVIN ENERGIE"
                            aria-label="Mail ETS LEVIN ENERGIE">
-                            <svg class="w80p" xmlns="http://www.w3.org/2000/svg" width="77" height="50"
+                            <svg class="w-120p" xmlns="http://www.w3.org/2000/svg" width="77" height="50"
                                  viewBox="0 0 77 50"
                                  fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -692,13 +721,13 @@
                     <div class="row padding-both-2em" style="top: -25px; min-width: 84%">
                         <a href="mailto:contact@levinenergie.fr" title="Mail ETS LEVIN ENERGIE"
                            aria-label="Mail ETS LEVIN ENERGIE">
-                            <p class="fs-34 text-align-left">
+                            <p class=" text-align-left">
                                 <span class="strong-dark">contact@levinenergie.fr</span>
                             </p>
                         </a>
                     </div>
                 </div>
-                <div class="hidden-div-tel">
+                <div class="w-120p padding-left-0_em-tem">
                     <a href="index.html" title="Accueil ETS LEVIN ENERGIE" aria-label="Accueil ETS LEVIN ENERGIE">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="409"
                              height="83" viewBox="0 0 409 83" fill="none">
@@ -870,8 +899,9 @@
                 </div>
             </div>
             <div style="border-left: 1px solid #0D0D0D" class="row margin-1_5em hidden-div-tel"></div>
-            <div class="row margin-left-3em-tel margin-right-0_5em padding-both-2em">
-                <h2 class="fs-57 text-align-left_center-tel" style="padding-top: 0px; padding-bottom: 0px;">Nos
+            <div class="row margin-left-3em-tel padding-both-1em-tel margin-right-0_5em margin-right-0p-tel padding-both-2em">
+                <h2 class="text-align-left_center-tel margin-top-1_5em-tel"
+                    style="padding-top: 0px; padding-bottom: 0px;">Nos
                     horraires</h2>
                 <div class="pc">
                     <div class="flex">
@@ -899,11 +929,11 @@
                         </div>
                         <div class="row ">
                             <p class="text-align-left">
-                                13:30 - 18:30<br>
-                                13:30 - 18:30<br>
-                                13:30 - 18:30<br>
-                                13:30 - 18:30<br>
-                                13:30 - 18:30<br>
+                                13:30 - 17:30<br>
+                                13:30 - 17:30<br>
+                                13:30 - 17:30<br>
+                                13:30 - 17:30<br>
+                                13:30 - 17:30<br>
                                 <br>
                                 <br>
                             </p>
@@ -911,32 +941,25 @@
                     </div>
                 </div>
                 <div class="smart">
-                    <div class="flex">
-                        <div class="row margin-right-3em">
-                            <p class="text-align-left fs-34">
+                    <div class="flex space-btw w-100p">
+                        <div class="row margin-right-0_5em">
+                            <p class="text-align-left">
                                 <span class="strong-dark">Lundi -</span><br>
                                 <span class="strong-dark">Vendredi</span><br>
                                 <br>
-                                <span class="strong-dark">Samedi - Dimanche</span>
+                                <span class="strong-dark">Samedi</span><br>
+                                <br>
+                                <span class="strong-dark">Dimanche</span>
                             </p>
                         </div>
                         <div class="row ">
-                            <p class="text-align-left margin-right-0_5em fs-34">
+                            <p class="text-align-left margin-right-0_5em text-align-right">
                                 08:00-12:00<br>
-                                13:30-18:30<br>
+                                13:30-17:30<br>
+                                <br>
+                                09:00-12:00<br>
                                 <br>
                                 Fermé
-                            </p>
-                        </div>
-                        <div class="row">
-                            <p class="text-align-left">
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
                             </p>
                         </div>
                     </div>
@@ -945,16 +968,15 @@
         </div>
     </div>
     <div>
-        <p class="tel-15px text-align-center section-grey">
-            © 2024 Tous droits réservés | Etablissement ETS Levin Energie | <a class="tel-15px"
+        <p class="text-align-center">
+            © 2024 Tous droits réservés | Etablissement ETS Levin Energie | <a class="tel-18px"
                                                                                href="mentionsLegales.html#mentions">Mentions
-            légales</a> - <a
-                href="mentionsLegales.html#viePrivee" class="tel-15px">Vie privée</a> - <a class="tel-15px"
-                                                                                           href="mentionsLegales.html#cookies">Infos
+            légales</a>-<a
+                href="mentionsLegales.html#viePrivee" class="tel-18px">Vie privée</a>-<a class="tel-18px"
+                                                                                         href="mentionsLegales.html#cookies">Infos
             cookies</a> | Réalisé
-            par Chamallow
+            par Chamallow
         </p>
     </div>
 </footer>
-
 </body>
