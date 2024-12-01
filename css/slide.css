@@ -34,7 +34,8 @@
     max-height: 160px; /* Hauteur maximale de l'image */
 }
 
+/* /!\ Bug détecté lors de l'usage sur téléphone /!\ */
 /* Optionnel : Animation fluide lors du hover */
-.marquee-content:hover {
-    animation-play-state: paused; /* Pause l'animation au survol */
-}
+/*.marquee-content:hover {*/
+/*    animation-play-state: paused; !* Pause l'animation au survol *!*/
+/*}*/

@@ -162,6 +162,16 @@ p {
     padding-left: 1em;
     padding-right: 1em;
 }
+.padding-both-20px {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.padding-left-40px {
+    padding-left: 40px;
+}
+.padding-right-40px {
+    padding-right: 40px;
+}
 .padding-both-0em_1em-tel {
     padding-left: 0em;
     padding-right: 0em;
@@ -181,6 +191,10 @@ p {
 }
 .text-white {
     color: #f6f6f6;
+}
+
+.text-deco {
+    text-decoration: underline;
 }
 
 .space-btw {
@@ -543,6 +557,9 @@ button.blue:hover {
 
     .margin-right-0p-tel {
         margin-right: 0%;
+    }
+    .margin-left-0p-tel {
+        margin-left: 0%;
     }
 
     .margin-15p-tel {
