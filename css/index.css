@@ -1,6 +1,6 @@
 .logos-pos {
     position: relative;
-    top: -292px;
+    top: -225px;
 }
 
 .logos-left-size {
@@ -33,15 +33,20 @@
 }
 
 .green-flame {
-    top: 0px; /* Ajustez la position verticale si nécessaire */
-    right: 0; /* Le coller au bord droit de l'écran */
-    left: auto; /* Annule toute règle left potentielle */
+    top: 0px;
+    right: 0;
+    left: auto;
 }
 
 .blue-flame {
-    top: 550px; /* Ajustez la position verticale si nécessaire */
-    right: auto; /* Le coller au bord droit de l'écran */
-    left: 0; /* Annule toute règle left potentielle */
+    right: auto;
+    left: 0;
+}
+
+.blue-flame-apropos {
+    top: 250px;
+    right: auto;
+    left: 0;
 }
 
 @media (max-width: 1400px) {

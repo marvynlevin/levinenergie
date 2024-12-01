@@ -1,5 +1,6 @@
 .cookie-popup {
     width: 28%;
+    display: none;
     height: auto;
     position: fixed;
     bottom: 20px;

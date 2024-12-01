@@ -11,11 +11,10 @@
 
 .carousel .content .card {
     height: calc(var(--height) + 5em);
-    opacity: 60%;
+    opacity: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .carousel .content .card h1 {
@@ -25,7 +24,7 @@
 }
 
 .carousel .control {
-    width: 100%;
+    width: 100lh;
     padding: 10px;
 
     display: flex;
@@ -34,32 +33,39 @@
 }
 
 .carousel .control svg {
+    position: absolute;
+    top: 0%;
     fill: currentColor;
     width: 50px;
-    height: auto;
+    height: 100vh;
 
     padding: 5px;
     border-radius: 50%;
 }
 
+.right {
+    right: 0;
+}
+
 .carousel .control svg:hover {
     cursor: pointer;
-    filter:drop-shadow(4px 5px 5px #444444);
+    filter: drop-shadow(4px 5px 5px #444444);
 }
 
 .image-container {
-  width: 100%; /* Ajuste la largeur de la div */
-  height: 800px; /* Ajuste la hauteur selon vos besoins */
-  position: relative; /* Nécessaire pour la positionnement absolu de l'image */
-  overflow: hidden; /* Coupe l'image si elle dépasse */
+    width: 100%; /* Ajuste la largeur de la div */
+    height: 100vh; /* Ajuste la hauteur selon vos besoins */
+    position: relative; /* Nécessaire pour la positionnement absolu de l'image */
+    overflow: hidden; /* Coupe l'image si elle dépasse */
 }
+
 .image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Assure que l'image prend 100% de la largeur */
-  height: 100%; /* Assure que l'image prend 100% de la hauteur */
-  object-fit: cover; /* Permet de couvrir toute la div en conservant les proportions de l'image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Assure que l'image prend 100% de la largeur */
+    height: 100%; /* Assure que l'image prend 100% de la hauteur */
+    object-fit: cover; /* Permet de couvrir toute la div en conservant les proportions de l'image */
 }
 
 .flash {
@@ -69,7 +75,7 @@
 .text-carrousel {
     font-size: 36px;
     font-style: inherit;
-    filter:drop-shadow(4px 5px 5px #444444);
+    filter: drop-shadow(4px 5px 5px #444444);
     font-weight: bolder;
     letter-spacing: -1px;
     color: #fafafa;
@@ -91,7 +97,22 @@
 
 @media (max-width: 1000px) {
     .text-carrousel {
-        font-size: 40px;
+        font-size: 30px;
         letter-spacing: -1px;
+    }
+
+    .carousel .control svg {
+        position: absolute;
+        top: 0%;
+        fill: currentColor;
+        width: 50px;
+        height: 100vh;
+
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    .right {
+        right: 0;
     }
 }

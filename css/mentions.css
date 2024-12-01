@@ -1,0 +1,25 @@
+section > div > ul > li,
+section > div > ul > a {
+    font-size: 18px;
+    text-align: left;
+}
+
+section > div> p > a {
+    font-size: 18px;
+    text-align: left;
+}
+
+section > div > ul > li > p,
+section > div > ul > li > a {
+    font-size: 18px;
+    text-align: left;
+}
+
+section > div > ul > li > p,
+section > div > p {
+    text-align: justify;
+}
+
+section > div > h2 {
+    margin-top: 0px;
+}

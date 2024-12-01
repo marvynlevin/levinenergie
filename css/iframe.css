@@ -1,0 +1,17 @@
+.blurred {
+    filter: blur(5px);
+    pointer-events: none; /* Désactive les interactions avec l'iframeContainer */
+}
+
+/* iframeContainer pour le message */
+.iframeContainer {
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}

@@ -1,0 +1,35 @@
+details {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Supprimer les marqueurs natifs */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Icône SVG personnalisée */
+summary::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+/* Faire pivoter l'icône quand la section est ouverte */
+details[open] summary::before {
+    transform: rotate(180deg);
+}
+
+details[open] {
+    background-color: #ffffff;
+}

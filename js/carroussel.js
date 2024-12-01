@@ -1,21 +1,61 @@
-/**
- * Cette class permet de définir un carousel et de l'associer à un élément HTML
- */
+// Mapping des ID vers leurs données d'images
+const carouselData = {
+    carouselAccueil: [
+        {img: "/static/img/illustrationImage2.png", desc: "Levin Energie chauffagiste à Etupes"},
+        {img: "/static/img/PAC1.jpg", desc: "Votre pompe à chaleur sur mesure"},
+        {img: "/static/img/PAC2.jpg", desc: "Votre pompe à chaleur sur mesure"},
+        {img: "/static/img/FROLING5.png", desc: "Nous vous proposons une large gamme de chauffage"},
+        {img: "/static/img/salleDeBains1.jpg", desc: "Création de salle de bain de A à Z"},
+        {img: "/static/img/salleDeBains2.jpg", desc: "Création de salle de bain de A à Z"}
+    ],
+    carouselApropos: [
+        {img: "/static/img/illustrationImage2.png", desc: "A propos de l'entreprise Levin Energie"},
+        {img: "/static/img/illustrationImage2.png", desc: "Histoire de l'entreprise Levin Energie"},
+        {img: "/static/img/illustrationImage2.png", desc: "Services de l'entreprise Levin Energie"},
+    ],
+    carouselChaudieres: [
+        {img: "/static/img/illustrationImage2.png", desc: "Chaudière à condensation gaz-fioul"},
+        {img: "/static/img/illustrationImage2.png", desc: "Chaudière bois-granulés ou mixte"},
+        {img: "/static/img/illustrationImage2.png", desc: "Poêle bois-granulés"},
+    ],
+    carouselPac: [
+        {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur air-eau"},
+        {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur air-air"},
+        {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur géothermique"},
+    ],
+    carouselPanneauxSolaires: [
+        {img: "/static/img/illustrationImage2.png", desc: "Panneaux solaires thermiques"},
+        {img: "/static/img/illustrationImage2.png", desc: "Panneaux photovoltaïques"},
+    ],
+    carouselChauffeEau: [
+        {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau solaire"},
+        {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau thermodynamique"},
+        {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau électrique"},
+    ],
+    carouselPlomberieSanitaire: [
+        {img: "/static/img/illustrationImage2.png", desc: "Salle de bains"},
+        {img: "/static/img/illustrationImage2.png", desc: "Chauffage central"},
+        {img: "/static/img/illustrationImage2.png", desc: "Désembouage hydraulique"},
+    ],
+};
+
 class Carousel {
-    // On retrouve nos propriétés ici
-    images = []
+    images = [];
     /**
      * @type HTMLElement
      */
     htmlElement = null;
-    carouselId = ""
+    carouselId = "";
 
     // Par défaut on sélectionnera la card 0
     currentSelectedCard = 0;
 
+    // Minuteur pour le défilement automatique
+    autoSwipeInterval = null;
+
     /**
      * @param images {Array<{ img: String, desc: String }>} La suite d'images avec leurs descriptions
-     * @param carouselId {String} Une ID permettant d'identifier les éléments du carousel. Ne doit pas être un nombre
+     * @param carouselId {String} Une ID permettant d'identifier les éléments du carousel.
      */
     constructor(images, carouselId) {
         this.images = images;
@@ -23,121 +63,134 @@ class Carousel {
     }
 
     /**
-     * Permet de définir quel élément HTML sera le carousel. Ne dois pas être executé plusieurs fois; à ses risques et périls
+     * Permet de définir quel élément HTML sera le carousel. Ne doit pas être exécuté plusieurs fois.
      * @param htmlElement {HTMLElement}
      */
     bindTo(htmlElement) {
         this.htmlElement = htmlElement;
 
-        console.log(this.htmlElement)
+        console.log(this.htmlElement);
 
-        // On va venir y ajouter toutes nos cards :)
+        // Ajouter toutes les cards
         for (let [index, card] of this.images.entries()) {
-            this.addCard(card, index, index === 0)
+            this.addCard(card, index, index === 0);
         }
 
-        // On va ensuite créer des écoutes d'évènements pour nos flèches (controle droite-gauche)
+        // Ajouter les évènements pour les flèches
         this.htmlElement
             .querySelector(".control .left")
-            .addEventListener("click", () => this.swipeLeft());
+            .addEventListener("click", () => {
+                this.swipeLeft();
+                this.resetAutoSwipe();
+            });
 
         this.htmlElement
             .querySelector(".control .right")
-            .addEventListener("click", () => this.swipeRight());
+            .addEventListener("click", () => {
+                this.swipeRight();
+                this.resetAutoSwipe();
+            });
+
+        // Lancer le défilement automatique
+        this.startAutoSwipe();
     }
 
-
     swipeRight() {
-        if (this.currentSelectedCard === this.images.length - 1)
-            return;
+        // Si on est à la dernière image, revenir à la première
+        if (this.currentSelectedCard === this.images.length - 1) {
+            this.currentSelectedCard = 0; // Réinitialiser à la première image
+        } else {
+            this.currentSelectedCard++;
+        }
 
-        this.hideAllCards(++this.currentSelectedCard);
+        this.hideAllCards(this.currentSelectedCard);
         this.applyFlash();
     }
 
     swipeLeft() {
-        if (this.currentSelectedCard === 0)
-            return;
-
+        if (this.currentSelectedCard === 0) {
+            this.currentSelectedCard = this.images.length;
+        }
         this.hideAllCards(--this.currentSelectedCard);
         this.applyFlash();
     }
 
     applyFlash() {
-        const currentCard = this.htmlElement.querySelector(`.card#${this.carouselId}${this.currentSelectedCard}`);
-        currentCard.classList.add('flash');
+        const currentCard = this.htmlElement.querySelector(
+            `.card#${this.carouselId}${this.currentSelectedCard}`
+        );
+        currentCard.classList.add("flash");
 
         // Retirer la classe après l'animation
         setTimeout(() => {
-            currentCard.classList.remove('flash');
-        }, 100); // Doit correspondre à la durée de l'animation CSS
+            currentCard.classList.remove("flash");
+        }, 300);
     }
 
     /**
      * @param except {number} Permet d'afficher une carte spécifique
      */
     hideAllCards(except) {
-        this.htmlElement
-            .querySelectorAll(".content .card")
-            .forEach(function (card, _) {
-                let index = card.id.replace(carousel.carouselId, "");
-
-                // On va cacher la card si ce n'est pas celle qu'on veut
-                card.style["display"] = index == except ? "inherit" : "none";
-            })
+        this.htmlElement.querySelectorAll(".content .card").forEach((card) => {
+            let index = card.id.replace(this.carouselId, "");
+            card.style["display"] = index == except ? "inherit" : "none";
+        });
     }
 
-
     /**
-     * Méthode interne permettant d'ajouter une card dans le html :D
-     *
-     * @param data { { img: String, desc: String } } les infos sur la carte
-     * @param index {number} L'index de la carte dans `this.images`
-     * @param visible {Boolean} Si cette card doit être visible
+     * Ajouter une card dans le HTML
+     * @param data { { img: String, desc: String } }
+     * @param index {number}
+     * @param visible {Boolean}
      */
     addCard(data, index, visible = false) {
-        // On va créer notre HTML
         let cardId = `${this.carouselId}${index}`;
+        let cardHtml = `<div class="card" id="${cardId}" style="display: ${
+            visible ? "inherit" : "none"
+        }">
+            <img alt="image" src="${data.img}">
+            ${
+            data.desc
+                ? `<h1 class="text-carrousel text-pos" style="max-width: 58%; margin-left: 8%; margin-right: 8%">${data.desc}</h1>`
+                : ""
+        }
+        </div>`;
 
-        // On va y mettre le HTML de la card
-        let cardHtml =
-            `<div class="card" id="${cardId}" style="display: ${visible ? "inherit" : "none"}">
-    <img alt="image" src="${data.img}"> 
-    ${typeof data.desc == "string" && data.desc.length > 0 ? `<h1 class="text-carrousel text-pos" style="max-width: 58%; margin-left: 10%; margin-right: 10%">${data.desc}</h1></div>` : ''}
-</div>`;
-
-
-        // On va venir l'insérer comme un gros bourrin
-        // le `.querySelector(".content")` permet de sélectionner `<div class="content">`
         this.htmlElement.querySelector(".content").innerHTML += cardHtml;
+    }
+
+    /**
+     * Démarre le défilement automatique
+     */
+    startAutoSwipe() {
+        this.autoSwipeInterval = setInterval(() => {
+            this.swipeRight();
+
+            if (this.currentSelectedCard === this.images.length - 1) {
+                this.currentSelectedCard = -1;
+            }
+        }, 4250);
+    }
+
+    /**
+     * Réinitialise le minuteur du défilement automatique
+     */
+    resetAutoSwipe() {
+        clearInterval(this.autoSwipeInterval);
+        this.startAutoSwipe();
     }
 }
 
-// On définit le carousel et on ajoute les images
-const carousel = new Carousel(
-    [
-        {
-            img: "/static/img/illustrationImage2.png",
-            desc: "Levin Energie chauffagiste à Etupes"
-        },
-        {
-            img: "/static/img/PAC1.jpg",
-            desc: "Levin Energie chauffagiste à Etupes"
-        },
-        {
-            img: "/static/img/salleDeBains1.jpg",
-            desc: "Levin Energie chauffagiste à Etupes"
-        },
-        {
-            img: "/static/img/salleDeBains2.jpg",
-            desc: "Levin Energie chauffagiste à Etupes"
-        }
-    ],
-    "plats_carousel"
-)
-
-// Quand la page sera entièrement chargée, on va lancer le carousel
+/**
+ * Initialise tous les carrousels sur la page
+ */
 document.addEventListener("DOMContentLoaded", function () {
-    // On va ensuite lui donner l'élément HTML où l'ID est 'plats' :)
-    carousel.bindTo(document.getElementById("plats"))
-})
+    for (let [id, images] of Object.entries(carouselData)) {
+        const carouselElement = document.getElementById(id);
+
+        if (carouselElement) {
+            const carousel = new Carousel(images, id);
+            carousel.bindTo(carouselElement);
+        }
+    }
+});
