@@ -8,4 +8,8 @@ https://levinenergie.fr/panneauxSolaires.html
 https://levinenergie.fr/chauffeEau.html
 https://levinenergie.fr/plomberieSanitaire.html
 https://levinenergie.fr/services.html
+https://levinenergie.fr/static/docs/fiche2024TarifsEtsLevinEnergie.pdf
+https://levinenergie.fr/static/docs/retractationEtsLevinEnergie.pdf
+https://levinenergie.fr/static/docs/CGVEtsLevinEnergie.pdf
 https://levinenergie.fr/mentionsLegales.html
+https://levinenergie.fr/sitemap.html
