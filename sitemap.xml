@@ -3,93 +3,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-       <loc>https://levinenergie.fr/</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>1.0000</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/index.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/static/docs/fiche2025TarifsEtsLevinEnergie.pdf</loc>
+       <lastmod>2025-02-13T19:45:42+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/aPropos.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/static/docs/retractationEtsLevinEnergie.pdf</loc>
+       <lastmod>2025-01-06T21:49:43+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/contact.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/static/docs/CGVEtsLevinEnergie.pdf</loc>
+       <lastmod>2025-01-06T21:49:43+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/chaudieres.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/sitemap.html</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/PAC.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/aPropos</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/panneauxSolaires.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/contact</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/chauffeEau.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/chaudieres</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/plomberieSanitaire.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/PAC</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/services.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/panneauxSolaires</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/static/docs/fiche2024TarifsEtsLevinEnergie.pdf</loc>
-       <lastmod>2025-01-02T13:21:47+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/chauffeEau</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/static/docs/retractationEtsLevinEnergie.pdf</loc>
-       <lastmod>2025-01-02T13:21:47+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/plomberieSanitaire</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/static/docs/CGVEtsLevinEnergie.pdf</loc>
-       <lastmod>2025-01-02T13:21:47+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/services</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://levinenergie.fr/mentionsLegales.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
+       <loc>https://www.levinenergie.fr/mentionsLegales</loc>
+       <lastmod>2025-03-12T22:23:03+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://levinenergie.fr/sitemap.html</loc>
-       <lastmod>2025-01-02T13:59:48+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6400</priority>
   </url>
 </urlset>
