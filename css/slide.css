@@ -13,7 +13,8 @@
 }
 
 /* Contenu du défilement (flexible pour ajouter plus d'images) */
-.marquee-content {
+.marquee-content,
+.rge-content {
     display: flex; /* Aligne les images horizontalement */
     align-items: center;
     animation: defilement-rtl 80s linear infinite; /* Animation infinie */
@@ -29,9 +30,23 @@
     }
 }
 
-/* Ajustez la taille des logos selon vos besoins */
-.logos {
-    max-height: 160px; /* Hauteur maximale de l'image */
+.rge-content img {
+    max-height: 120px;
+}
+
+.marquee-content img {
+    max-height: 120px;
+}
+
+@media (max-width: 768px) {
+    .rge-content img {
+        max-height: 100px;
+    }
+
+    .marquee-content img {
+        max-height: 160px;
+    }
+
 }
 
 /* /!\ Bug détecté lors de l'usage sur téléphone /!\ */

@@ -1,20 +1,20 @@
 .logos-pos {
     position: relative;
-    top: -225px;
+    top: -150px;
 }
 
 .logos-left-size {
-    height: 260px;
+    height: 160px;
     width: auto;
 }
 .logos-right-size {
-    height: 260px;
+    height: 160px;
     width: auto;
-    padding-top: 40px;
+    padding-top: 0px;
 }
 .logos-certif-size {
-    max-height: 267px;
-    width: auto;
+    max-width: 80vw;
+    height: auto;
 }
 
 .show-certifs-tel {
@@ -51,7 +51,7 @@
 
 @media (max-width: 1400px) {
     .logos-certif-size {
-        max-height: 267px;
+        max-height: 0px;
         width: auto;
         display: none;
     }

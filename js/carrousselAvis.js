@@ -61,7 +61,7 @@ function next() {
       newNextElement.classList.add("next");
       updateCardPositions('next'); // Mise à jour des positions
     } else {
-      // Si on atteint la fin, on ne fait plus rien
+      // Si on atteint la fin, on ne fait plus rien (ou on peut boucler si besoin)
       console.log("Fin de la liste");
     }
   }
@@ -121,3 +121,20 @@ swipe.on("swiperight", () => {
 
 // Initial update to place cards properly
 updateCardPositions();
+
+let carroussel2Interval = setInterval(() => {
+  next();
+}, 10000);
+
+// Optionnel : Pause du timer au survol de la souris
+const swipeContainer = $(".swipe");
+if (swipeContainer) {
+  swipeContainer.addEventListener('mouseenter', () => {
+    clearInterval(carroussel2Interval);
+  });
+  swipeContainer.addEventListener('mouseleave', () => {
+    carroussel2Interval = setInterval(() => {
+      next();
+    }, 10000);
+  });
+}

@@ -28,6 +28,7 @@ nav {
     max-width: 300px;
     margin: auto;
     padding: 0.5em;
+    height: 100%;
 }
 
 .img-resize-footer {
@@ -116,8 +117,51 @@ nav {
 }
 
 .product-item:hover svg {
-    transform: rotate(180deg); /* Appliquer une rotation de 180 degrés */
-    transition: transform 0.5s ease; /* Animation fluide de la rotation */
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+}
+
+.navbar-list a,
+.product-link {
+    color: #000000;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.green,
+.navbar-list a:hover,
+.product-link:hover {
+    background: linear-gradient(90deg, #01574F 0%, #579440 20%, #84A12C 43%, #5A7E37 77%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+}
+
+.product-link svg path {
+    fill: black;
+    stroke: black;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.product-link:hover svg path,
+.product-link.green svg path {
+    fill: #579440;
+    stroke: #579440;
+}
+
+.product-link img {
+    transition: filter 0.3s ease;
+}
+
+.product-link:hover img {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(45%) saturate(800%) hue-rotate(67deg) brightness(80%) contrast(95%);
+}
+
+.svg-right a svg {
+    fill: #579440;
+    stroke: #579440;
 }
 
 .navbar-list a {
@@ -125,24 +169,23 @@ nav {
     transition: color 1s ease;
 }
 
-.navbar-list a:hover {
-    color: #18AA00;
+.navbar-list li a:hover {
+    background: linear-gradient(90deg, #01574F 0%, #579440 20%, #84A12C 43%, #5A7E37 77%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .green {
-    color: #18AA00 !important; /* Vert pour l'élément actif */
+    background: linear-gradient(90deg, #01574F 0%, #579440 20%, #84A12C 43%, #5A7E37 77%);
+    font-weight: 600;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
-
-.blue {
-    color: #3E04E4;
-!important pointer-events: none; /* Désactive le lien pour indiquer que l'utilisateur est déjà sur cette page */
-}
-
-.svg-green {
-    fill: #18AA00; /* Applique la couleur verte au remplissage */
-    stroke: #18AA00; /* Applique la couleur verte au contour */
-}
-
 
 .product-link {
     display: inline-flex;
@@ -150,35 +193,6 @@ nav {
     text-decoration: none;
     color: inherit;
     transition: color 1s ease;
-}
-
-.product-link:hover {
-    color: #18AA00;
-}
-
-.product-link:hover svg path {
-    fill: #18AA00;
-    stroke: #18AA00;
-    transition: fill 1s ease, stroke 1s ease;
-}
-
-.product-link.green {
-    color: #18AA00 !important;
-}
-
-.product-link.green svg path {
-    fill: #18AA00;
-    stroke: #18AA00;
-    pointer-events: none;
-}
-
-.product-link.green:hover {
-    color: #18AA00;
-}
-
-.product-link.green:hover svg path {
-    fill: #18AA00;
-    stroke: #18AA00;
 }
 
 .product-link svg path {
@@ -205,7 +219,67 @@ nav {
     background-color: #FAFAFA;
     width: 100vw;
     height: 100vh;
+    padding-right: 8%;
     scrollbar-width: none;
+    text-align: right;
+}
+
+.scroll-nav-tel .navbar-list {
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.scroll-nav-tel .submenu,
+.scroll-nav-tel .submenu .row {
+    justify-content: flex-end !important;
+    align-items: flex-end;
+}
+
+.scroll-nav-tel ul li a {
+    font-weight: 600;
+}
+
+#menu-container,
+#menu-container * {
+    text-align: right !important;
+}
+
+#menu-container .navbar-list,
+#menu-container .submenu,
+#menu-container .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+}
+
+.scroll-nav-tel ul div div a:hover {
+    -webkit-text-fill-color: initial !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+    background: none !important;
+}
+
+#menu-container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+}
+
+.product-info-click {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.product-info-click a h5 {
+    font-weight: normal;
+}
+
+.product-info-click a h4 {
+    font-weight: bold;
 }
 
 @media (max-width: 1400px) {
@@ -217,9 +291,12 @@ nav {
         width: 100vw;
     }
 
+    .margin-1_5em {
+        margin: 1em;
+    }
+
     .svg-right {
         justify-content: flex-end;
-        /*right: 0;*/
     }
 
     .svg-left {

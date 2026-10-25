@@ -1,17 +1,16 @@
 // Mapping des ID vers leurs données d'images
 const carouselData = {
     carouselAccueil: [
-        {img: "/static/img/illustrationImage2.png", desc: "Levin Energie chauffagiste à Etupes"},
         {img: "/static/img/PAC1.jpg", desc: "Votre pompe à chaleur sur mesure"},
-        {img: "/static/img/PAC2.jpg", desc: "Votre pompe à chaleur sur mesure"},
-        {img: "/static/img/FROLING5.png", desc: "Nous vous proposons une large gamme de chauffage"},
+        {img: "/static/img/chaudiere4.png", desc: "Nous vous proposons une large gamme de chauffage"},
+        {img: "/static/img/panneauxPhoto1.png", desc: "Installation de panneaux solaires pour plus d'autonomie"},
         {img: "/static/img/salleDeBains1.jpg", desc: "Création de salle de bain de A à Z"},
         {img: "/static/img/salleDeBains2.jpg", desc: "Création de salle de bain de A à Z"}
     ],
     carouselApropos: [
-        {img: "/static/img/illustrationImage2.png", desc: "A propos de l'entreprise Levin Energie"},
-        {img: "/static/img/illustrationImage2.png", desc: "Histoire de l'entreprise Levin Energie"},
-        {img: "/static/img/illustrationImage2.png", desc: "Services de l'entreprise Levin Energie"},
+        {img: "/static/img/photoJumpy1.png", desc: "A propos de l'entreprise Levin Energie"},
+        {img: "/static/img/photoJumpy1.png", desc: "Histoire de l'entreprise"},
+        {img: "/static/img/photoJumpy1.png", desc: "Découvrez tous les services que nous avons à vous proposons"},
     ],
     carouselChaudieres: [
         {img: "/static/img/illustrationImage2.png", desc: "Chaudière à condensation gaz-fioul"},

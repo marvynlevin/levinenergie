@@ -1,0 +1,12 @@
+<svg class="controls-pos right zoom-svg" xmlns="http://www.w3.org/2000/svg" width="84" height="123"
+                 viewBox="0 0 84 123" fill="none">
+                <g clip-path="url(#clip0_92_218)">
+                    <path d="M27.886 106.867L57.9392 62.8605C58.4488 62.1143 58.4488 60.9089 57.9392 60.1627L27.886 16.1373C27.3633 15.4103 26.5401 15.4293 26.0437 16.1755C25.5602 16.9217 25.5602 18.0889 26.0437 18.8351L55.169 61.5021L26.0437 104.15C25.5472 104.915 25.5602 106.121 26.0698 106.848C26.5795 107.575 27.3765 107.575 27.886 106.867Z"
+                          fill="#FAFAFA" stroke="#FAFAFA" stroke-width="2.06867"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_92_218">
+                        <rect width="123" height="84" fill="white" transform="matrix(0 1 -1 0 84 0)"/>
+                    </clipPath>
+                </defs>
+            </svg>

@@ -27,7 +27,8 @@
 }
 
 .button-cookie {
-    background-color: #18AA00;
+    /* background-color: #18AA00; */
+    background-color: #579440;
     color: white;
     border: none;
     padding: 6px 10px;
@@ -38,7 +39,8 @@
 }
 
 .button-cookie-blue {
-    background-color: #3E04E4;
+    /* background-color: #3E04E4; */
+    background-color: #173598;
     color: white;
     border: none;
     padding: 6px 10px;
@@ -49,7 +51,7 @@
 }
 
 .button-cookie:hover {
-    background-color: #3E04E4;
+    background-color: #173598;
 }
 
 .cookie-toggle-btn {

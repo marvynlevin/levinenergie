@@ -96,4 +96,14 @@
       justify-content: center;
       cursor: pointer;
    }
+
+   .carousel-title-new {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0.8em;
+}
 }

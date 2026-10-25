@@ -1,31 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Ancien code (survol) ---
+    // Controle Barre de navigation PC
     const productItems = document.querySelectorAll('.product-item');
-    const allDivs = document.querySelectorAll('.product-info'); // Sélectionne toutes les divs à afficher
+    const allDivs = document.querySelectorAll('.product-info');
 
     productItems.forEach(item => {
-        const targetDiv = document.getElementById(item.getAttribute('data-target'));
+        const targetId = item.getAttribute('data-target');
+        const targetDiv = targetId ? document.getElementById(targetId) : null;
 
-        // Afficher la div lors du survol et cacher les autres
-        item.addEventListener('mouseenter', () => {
-            allDivs.forEach(div => div.style.display = 'none'); // Cache toutes les divs
-            targetDiv.style.display = 'flex'; // Affiche seulement la div liée
-        });
+        if (targetDiv) {
+            item.addEventListener('mouseenter', () => {
+                allDivs.forEach(div => div.style.display = 'none');
+                targetDiv.style.display = 'flex';
+            });
 
-        // Cacher la div si la souris sort de l'élément et de la div
-        item.addEventListener('mouseleave', () => {
-            if (!targetDiv.matches(':hover')) {
+            item.addEventListener('mouseleave', () => {
+                if (!targetDiv.matches(':hover')) {
+                    targetDiv.style.display = 'none';
+                }
+            });
+
+            targetDiv.addEventListener('mouseleave', () => {
                 targetDiv.style.display = 'none';
-            }
-        });
-
-        // Cacher la div si la souris sort de la div
-        targetDiv.addEventListener('mouseleave', () => {
-            targetDiv.style.display = 'none';
-        });
+            });
+        }
     });
 
-    // --- Nouveau code (clic) ---
+    // Controle Barre de navigation TEL
     const productClickItems = document.querySelectorAll('.product-item-click');
     const allClickDivs = document.querySelectorAll('.product-info-click'); // Sélectionne toutes les divs à afficher par clic
     let currentlyVisibleDiv = null; // Variable pour stocker l'élément visible via clic
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Code du burger menu ---
+    // Controle Navigation Menu burger
 
     const burgerMenu = document.getElementById('burger-menu'); // L'icône du burger menu (SVG)
     const menuContainer = document.getElementById('menu-container'); // Le menu principal
