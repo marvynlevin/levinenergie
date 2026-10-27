@@ -31,6 +31,13 @@ nav {
     height: 100%;
 }
 
+.img-resize2 {
+    max-width: 300px;
+    margin: auto;
+    padding: 0.5em;
+    height: 100%;
+}
+
 .img-resize-footer {
     max-width: 400px;
     padding: 0em 0.2em 0.2em 0.2em;
@@ -298,4 +305,21 @@ nav .green {
     .svg-left {
         justify-content: flex-start;
     }
+}
+
+@media (max-width: 392px) {
+    .img-resize {
+        max-width: 280px;
+        margin: auto;
+        padding: 0.5em;
+        height: 100%;
+    }
+
+    .img-resize2 {
+        max-width: 90px;
+        margin: auto;
+        padding: 0.5em;
+        height: 100%;
+    }
+
 }
