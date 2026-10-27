@@ -1,41 +1,63 @@
 // Mapping des ID vers leurs données d'images
 const carouselData = {
     carouselAccueil: [
-        {img: "/static/img/PAC1.jpg", desc: "Votre pompe à chaleur sur mesure"},
-        {img: "/static/img/chaudiere4.png", desc: "Nous vous proposons une large gamme de chauffage"},
-        {img: "/static/img/panneauxPhoto1.png", desc: "Installation de panneaux solaires pour plus d'autonomie"},
-        {img: "/static/img/salleDeBains1.jpg", desc: "Création de salle de bain de A à Z"},
-        {img: "/static/img/salleDeBains2.jpg", desc: "Création de salle de bain de A à Z"}
+        { img: "/static/img/PAC1.jpg", desc: "Votre pompe à chaleur sur mesure" },
+        {
+            imgPc: "/static/img/pacBg.jpeg",
+            imgMobile: "/static/img/pacBg2.jpeg",
+            desc: "Un confort thermique sur mesure toute l'année",
+        },
+        {
+            imgPc: "/static/img/chaudiereBoisBg.jpg",
+            imgMobile: "/static/img/chaudiereBoisBg2.jpg",
+            desc: "Une solution de chauffage au bois performante et durable",
+        },
+        {
+            imgPc: "/static/img/solaireBgCaroussel.jpeg",
+            imgMobile: "/static/img/solaireBgCaroussel1.jpeg",
+            desc: "Installation de panneaux solaires pour plus d'autonomie",
+        },
+        {
+            imgPc: "/static/img/chaudiere4.png",
+            imgMobile: "/static/img/chaudiere41.png",
+            desc: "Une solution de chauffage à granulés économique et performante",
+        },
+        { img: "/static/img/sallebainBg.jpg", desc: "Aménagement de votre salle de bains clé en main" },
+        {
+            imgPc: "/static/img/salleDeBains1.jpg",
+            imgMobile: "/static/img/salleDeBains2.jpg",
+            desc: "Création de salle de bain de A à Z",
+        },
     ],
     carouselApropos: [
-        {img: "/static/img/photoJumpy1.png", desc: "A propos de l'entreprise Levin Energie"},
-        {img: "/static/img/photoJumpy1.png", desc: "Histoire de l'entreprise"},
-        {img: "/static/img/photoJumpy1.png", desc: "Découvrez tous les services que nous avons à vous proposons"},
+        { img: "/static/img/photoJumpy1.png", desc: "A propos de l'entreprise Levin Energie" },
+        { img: "/static/img/photoJumpy1.png", desc: "Histoire de l'entreprise" },
+        { img: "/static/img/photoJumpy1.png", desc: "Découvrez tous les services que nous avons à vous proposons" },
     ],
-    carouselChaudieres: [
-        {img: "/static/img/illustrationImage2.png", desc: "Chaudière à condensation gaz-fioul"},
-        {img: "/static/img/illustrationImage2.png", desc: "Chaudière bois-granulés ou mixte"},
-        {img: "/static/img/illustrationImage2.png", desc: "Poêle bois-granulés"},
-    ],
-    carouselPac: [
-        {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur air-eau"},
-        {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur air-air"},
-        {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur géothermique"},
-    ],
-    carouselPanneauxSolaires: [
-        {img: "/static/img/illustrationImage2.png", desc: "Panneaux solaires thermiques"},
-        {img: "/static/img/illustrationImage2.png", desc: "Panneaux photovoltaïques"},
-    ],
-    carouselChauffeEau: [
-        {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau solaire"},
-        {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau thermodynamique"},
-        {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau électrique"},
-    ],
-    carouselPlomberieSanitaire: [
-        {img: "/static/img/illustrationImage2.png", desc: "Salle de bains"},
-        {img: "/static/img/illustrationImage2.png", desc: "Chauffage central"},
-        {img: "/static/img/illustrationImage2.png", desc: "Désembouage hydraulique"},
-    ],
+    // carouselChaudieres: [
+    //     {img: "/static/img/illustrationImage2.png", desc: "Chaudière à condensation gaz-fioul"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Chaudière bois-granulés ou mixte"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Poêle bois-granulés"},
+    // ],
+    // carouselPac: [
+    //     {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur air-eau"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur air-air"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Pompe à chaleur géothermique"},
+    // ],
+    // carouselPanneauxSolaires: [
+    //     {img: "/static/img/illustrationImage2.png", desc: "Panneaux solaires thermiques"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Panneaux photovoltaïques"},
+    // ],
+    // carouselChauffeEau: [
+    //     {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau solaire"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau thermodynamique"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Chauffe-eau électrique"},
+    // ],
+    // carouselPlomberieSanitaire: [
+    //     {img: "/static/img/illustrationImage2.png", desc: "Salle de bains"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Chauffage central"},
+    //     {img: "/static/img/illustrationImage2.png", desc: "Désembouage hydraulique"},
+    // ],
 };
 
 class Carousel {
@@ -138,21 +160,26 @@ class Carousel {
 
     /**
      * Ajouter une card dans le HTML
-     * @param data { { img: String, desc: String } }
+     * @param data { { imgPc: String, imgMobile: String, desc: String } }
      * @param index {number}
      * @param visible {Boolean}
      */
     addCard(data, index, visible = false) {
         let cardId = `${this.carouselId}${index}`;
-        let cardHtml = `<div class="card" id="${cardId}" style="display: ${
-            visible ? "inherit" : "none"
-        }">
-            <img alt="image" src="${data.img}">
-            ${
-            data.desc
+
+        // Détection de l'appareil (mobile si largeur <= 768px)
+        const isMobile = window.innerWidth <= 768;
+
+        // Choisit l'image mobile si elle existe et qu'on est sur mobile, sinon l'image PC (ou l'ancienne propriété 'img')
+        let selectedImg = (isMobile && data.imgMobile) ? data.imgMobile : (data.imgPc || data.img);
+
+        let cardHtml = `<div class="card" id="${cardId}" style="display: ${visible ? "inherit" : "none"
+            }">
+            <img alt="image" src="${selectedImg}">
+            ${data.desc
                 ? `<h1 class="text-carrousel text-pos" style="max-width: 58%; margin-left: 8%; margin-right: 8%">${data.desc}</h1>`
                 : ""
-        }
+            }
         </div>`;
 
         this.htmlElement.querySelector(".content").innerHTML += cardHtml;

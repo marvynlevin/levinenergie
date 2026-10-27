@@ -14,6 +14,11 @@
     transition: all 0.4s ease;
 }
 
+.cookie-adjust {
+    margin: 4px; 
+    margin-top: 7px;
+}
+
 .cookie-popup.retracted {
     width: 50px;
     right: 10px;

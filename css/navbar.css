@@ -128,7 +128,7 @@ nav {
     transition: opacity 0.3s ease;
 }
 
-.green,
+nav .green,
 .navbar-list a:hover,
 .product-link:hover {
     background: linear-gradient(90deg, #01574F 0%, #579440 20%, #84A12C 43%, #5A7E37 77%);
@@ -149,10 +149,6 @@ nav {
 .product-link.green svg path {
     fill: #579440;
     stroke: #579440;
-}
-
-.product-link img {
-    transition: filter 0.3s ease;
 }
 
 .product-link:hover img {
@@ -178,7 +174,7 @@ nav {
     color: transparent;
 }
 
-.green {
+nav .green {
     background: linear-gradient(90deg, #01574F 0%, #579440 20%, #84A12C 43%, #5A7E37 77%);
     font-weight: 600;
     -webkit-background-clip: text;
