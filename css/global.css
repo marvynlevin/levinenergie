@@ -324,10 +324,6 @@ textarea {
     text-align: justify;
 }
 
-.text-align-both_left-tel {
-    text-align: justify;
-}
-
 .text-white {
     color: #f6f6f6;
 }
@@ -454,6 +450,10 @@ button.blue:hover {
 
 .vertical-align-div-2 {
     align-items: center;
+}
+
+.vertical-align-div-start {
+    align-items: flex-start;
 }
 
 .degrade-green-to-blue {
@@ -677,6 +677,11 @@ img.w80p {
     display: block;
 }
 
+.w-50 {
+        width: 50px;
+        height: auto;
+    }
+
 @media (max-width: 1000px) {
     body {
         font-style: normal;
@@ -751,8 +756,13 @@ img.w80p {
         align-items: center;
     }
 
+    .w-22-tel {
+        width: 22px;
+        height: auto;
+    }
+
     .w-90p-tel {
-        width: 70%;
+        width: 790%;
     }
 
     .w-100p-tel {
@@ -905,6 +915,10 @@ img.w80p {
 
     .fs20-30-tel {
         font-size: 30px;
+    }
+
+    .fs16-tel {
+        font-size: 16px;
     }
 
     .box-60 {
