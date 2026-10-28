@@ -16,3 +16,75 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.modern-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #FEFEFE;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eaeaea;
+}
+
+.modern-form .form-group {
+    margin-bottom: 20px;
+}
+
+.modern-form input[type="text"],
+.modern-form input[type="email"],
+.modern-form input[type="tel"],
+.modern-form select,
+.modern-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #F6F6F6;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.modern-form input:focus,
+.modern-form select:focus,
+.modern-form textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    border-color: #173598;
+}
+
+.modern-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-modern {
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .modern-form input[type="text"],
+.modern-form input[type="email"],
+.modern-form input[type="tel"],
+.modern-form select,
+.modern-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #F6F6F6;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+}
+

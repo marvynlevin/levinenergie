@@ -1,9 +1,8 @@
 .blurred {
     filter: blur(5px);
-    pointer-events: none; /* Désactive les interactions avec l'iframeContainer */
+    pointer-events: none;
 }
 
-/* iframeContainer pour le message */
 .iframeContainer {
     width: 100%;
     height: 220px;
@@ -14,4 +13,29 @@
     align-items: center;
     text-align: center;
     z-index: 2;
+}
+
+.location-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-card {
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    background-color: #F6F6F6;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.iframeContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+}
+
+.location-details p {
+    line-height: 1.4;
 }

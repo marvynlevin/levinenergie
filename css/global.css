@@ -356,6 +356,24 @@ textarea {
     font-weight: calc(750);
 }
 
+.blue-linear {
+    background: linear-gradient(90deg, #0D2269 0%, #314CA6 25%, #2F4AA2 50%, #173598 75%, #052940 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.green-linear {
+    background: linear-gradient(90deg, #01574F 0%, #579440 20%, #84A12C 43%, #5A7E37 77%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
 .strong-dark {
     font-weight: calc(750);
 }
