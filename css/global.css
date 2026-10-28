@@ -513,6 +513,10 @@ button.blue:hover {
     flex-direction: row;
 }
 
+.row-inv-1000px {
+    flex-direction: row;
+}
+
 .column-inv {
     flex-direction: row;
 }
@@ -664,8 +668,6 @@ img.w80p {
         padding: 0;
         overflow-x: hidden;
     }
-
-
 
     button {
         font-weight: bolder;
@@ -961,11 +963,12 @@ img.w80p {
     }
 
     .width_max80-tel {
-        min-width: 80%;
+        width: 80%;
+        height: auto;
     }
 
-    .width_max80-tel {
-        max-width: 80%;
+    .row-inv-1000px {
+        flex-direction: column;
     }
 }
 
