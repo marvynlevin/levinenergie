@@ -455,9 +455,12 @@ button.blue:hover {
 .vertical-align-div-start {
     align-items: center;
     justify-content: flex-start;
-    margin-left: auto;        /* Pousse le bloc pour le centrer */
-    margin-right: auto;       /* Pousse le bloc pour le centrer */
-    gap: 12px;
+    width: 100%;
+}
+
+.vertical-align-div-start-col {
+    align-items: center;
+    width: 100%;
 }
 
 .degrade-green-to-blue {
@@ -489,6 +492,10 @@ button.blue:hover {
 
 .fs20-30-tel {
     font-size: 20px;
+}
+
+.w-50p {
+    width: 50%;
 }
 
 .w-100p {
@@ -684,7 +691,11 @@ img.w80p {
 .w-50 {
         width: 50px;
         height: auto;
-    }
+}
+
+.box-80-to-90-tel {
+    margin: 0% 15% 0% 15%;
+}
 
 @media (max-width: 1000px) {
     body {
@@ -913,6 +924,10 @@ img.w80p {
         font-size: 15px;
     }
 
+    .tel-16px {
+        font-size: 16px;
+    }
+
     .fs25-35-tel {
         font-size: 40px;
     }
@@ -935,6 +950,10 @@ img.w80p {
 
     .box-60-to-80-tel {
         margin: 0% 6% 0% 6%;
+    }
+
+    .box-80-to-90-tel {
+        margin: 0% 4% 0% 4%;
     }
 
     .margin-left-1_5em_pc {

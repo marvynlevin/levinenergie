@@ -1,25 +1,88 @@
-section > div > ul > li,
-section > div > ul > a {
+section>div>ul>li,
+section>div>ul>a {
     font-size: 18px;
     text-align: left;
 }
 
-section > div> p > a {
+section>div>p>a {
     font-size: 18px;
     text-align: left;
 }
 
-section > div > ul > li > p,
-section > div > ul > li > a {
+section>div>ul>li>p,
+section>div>ul>li>a {
     font-size: 18px;
     text-align: left;
 }
 
-section > div > ul > li > p,
-section > div > p {
+section>div>ul>li>p,
+section>div>p {
     text-align: justify;
 }
 
-section > div > h2 {
+section>div>h2 {
     margin-top: 0px;
+}
+
+.mentions p {
+    font-size: 16px;
+}
+
+
+
+
+.sitemap-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.sitemap-list li {
+    margin: 8px 0;
+    padding-left: 18px;
+    position: relative;
+    font-size: 18px;
+}
+
+.sitemap-list li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    color: #0180AF;
+    font-size: 10px;
+    top: 2px;
+}
+
+.sitemap-sublist {
+    list-style-type: none;
+    padding-left: 18px;
+    margin-top: 6px;
+}
+
+.sitemap-sublist li a {
+    font-size: 17px;
+    margin: 4px 0;
+}
+
+.sitemap-sublist li::before {
+    content: "—";
+    color: #666;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    p {
+        font-size: 16px;
+    }
+
+    .sitemap-list,
+    .sitemap-list li {
+        font-size: 16px;
+    }
+
+    .sitemap-sublist li {
+        font-size: 14px;
+    }
 }
