@@ -45,18 +45,18 @@ if (!preg_match('/^[0-9\-\+\s]{8,20}$/', $telephone)) {
 
 // 6. Construction du message (texte brut structuré)
 $to = 'contact@levinenergie.fr';
-$subject = 'Nouvelle demande [' . $type_prestation . '] : ' . $nom;
+$subject = 'Formulaire [' . $type_prestation . '] : ' . $nom;
 
 $body  = "Nouveau message depuis le site web :\n\n";
 $body .= "--- COORDONNÉES DU CLIENT ---\n";
-$body .= "Nom & Prénom   : " . $nom . "\n";
-$body .= "E-mail         : " . $email . "\n";
-$body .= "Téléphone      : " . $telephone . "\n";
-$body .= "Adresse        : " . $adresse . "\n\n";
+$body .= "Nom & Prénom          : " . $nom . "\n";
+$body .= "E-mail                : " . $email . "\n";
+$body .= "Téléphone             : " . $telephone . "\n";
+$body .= "Adresse Postale       : " . $adresse . "\n\n";
 
 $body .= "--- INFORMATIONS CHAUFFAGE ---\n";
-$body .= "Type de prestation : " . $type_prestation . "\n";
-$body .= "Machine / Modèle   : " . (!empty($equipement) ? $equipement : 'Non renseigné') . "\n\n";
+$body .= "Type de prestation    : " . $type_prestation . "\n";
+$body .= "Machine / Modèle      : " . (!empty($equipement) ? $equipement : 'Non renseigné') . "\n\n";
 
 $body .= "--- DESCRIPTION DU PROBLÈME ---\n";
 $body .= $message . "\n";
