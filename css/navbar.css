@@ -305,6 +305,14 @@ nav .green {
     .svg-left {
         justify-content: flex-start;
     }
+
+    #menu-container a {
+        font-size: 25px;
+    }
+
+    footer img {
+        max-width: 90vw;
+    }
 }
 
 @media (max-width: 392px) {

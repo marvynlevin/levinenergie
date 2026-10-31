@@ -1,5 +1,5 @@
 https://www.levinenergie.fr/
-https://www.levinenergie.fr/static/docs/grilleTarifaireLevinEnergie.pdf
+https://www.levinenergie.fr//static/docs/grilleTarifaireLevinEnergie.pdf
 https://www.levinenergie.fr/static/docs/retractationEtsLevinEnergie.pdf
 https://www.levinenergie.fr/static/docs/CGVEtsLevinEnergie.pdf
 https://www.levinenergie.fr/sitemap.html
